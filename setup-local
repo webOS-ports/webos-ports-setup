@@ -1,0 +1,2 @@
+# keep this file compatible with sh (it's read from setup-env)
+DISTRO="webos"
