@@ -1,4 +1,4 @@
-bitbake,git://github.com/openembedded/bitbake.git,master,e5045429bce15b66c4355be214db3982ac7761f3
-openembedded-core,git://github.com/openembedded/oe-core.git,master,04568d1f18250d531aad5d286157d2d559083520
-meta-openembedded,git://github.com/openembedded/meta-oe.git,master,443481fec3855476f60ee34358887d00368e6859
+bitbake,git://github.com/openembedded/bitbake.git,master,53e6b630f0463d2d07cdaa9c9eb36794dc9b6b69
+openembedded-core,git://github.com/openembedded/oe-core.git,master,1b40dac2c501ae8c8d812cf2866fe7917f144a19
+meta-openembedded,git://github.com/openembedded/meta-oe.git,master,aa4f43779695aa8fd7edec71553d82b96c26babb
 meta-webos,git://github.com/webOS-ports/meta-webos.git,master,HEAD
