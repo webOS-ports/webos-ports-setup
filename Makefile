@@ -8,6 +8,7 @@ BRANCH_COMMON = master
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
 UPDATE_CONFFILES_ENABLED = "0"
+RESET_ENABLED = "0"
 
 ifneq ($(wildcard config.mk),)
 include config.mk
@@ -38,6 +39,9 @@ update:
 			echo -e "\\e[0m" ; \
 		fi ; \
 		[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh update ) ; \
+		if [ "${RESET_ENABLED}" = "1" ] ; then \
+			[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh reset ) ; \
+		fi; \
 	fi
 
 .PHONY: setup-common
