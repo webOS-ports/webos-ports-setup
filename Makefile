@@ -91,5 +91,6 @@ update-conffiles: webos-ports/.configured
 	cp common/conf/bblayers.conf webos-ports/conf/bblayers.conf
 	cp common/conf/layers.txt webos-ports/conf/layers.txt
 	cp common/conf/site.conf webos-ports/conf/site.conf
+	cp common/scripts/* scripts/
 
 # End of Makefile
