@@ -7,6 +7,8 @@ BRANCH_COMMON = master
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
+UPDATE_CONFFILES_ENABLED = "0"
+
 ifneq ($(wildcard config.mk),)
 include config.mk
 endif
@@ -21,6 +23,9 @@ show-config:
 update: 
 	if [ "${CHANGELOG_ENABLED}" = "1" ] ; then \
 		${MAKE} changelog ; \
+	fi
+	if [ "${UPDATE_CONFFILES_ENABLED}" = "1" ] ; then \
+		${MAKE} update-conffiles ; \
 	fi
 	[ ! -e common ]       || ${MAKE} update-common 
 	if [ -d webos-ports ] ; then \
