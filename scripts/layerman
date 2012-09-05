@@ -50,6 +50,7 @@ function check_layer() {
 			echo "WARNING: ${LAYERNAME} is using a different branch than configured in layers.txt, detected ${CURRENTBRANCH} instead of ${BRANCH}"
 			echo "WARNING: Changing branch to: '${BRANCH}'"
 			echo "WARNING!!!!"
+			git remote update
 			git checkout origin/${BRANCH} -b ${BRANCH} >/dev/null || git checkout ${BRANCH}
 		fi
 	fi
