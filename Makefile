@@ -25,10 +25,10 @@ update:
 	if [ "${CHANGELOG_ENABLED}" = "1" ] ; then \
 		${MAKE} changelog ; \
 	fi
+	[ ! -e common ]       || ${MAKE} update-common 
 	if [ "${UPDATE_CONFFILES_ENABLED}" = "1" ] ; then \
 		${MAKE} update-conffiles ; \
 	fi
-	[ ! -e common ]       || ${MAKE} update-common 
 	if [ -d webos-ports ] ; then \
 		if ! diff -q webos-ports/conf/bblayers.conf common/conf/bblayers.conf ; then \
 			echo -e "\\033[1;31m" "WARNING: you have different bblayers.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
