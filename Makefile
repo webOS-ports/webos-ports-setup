@@ -1,4 +1,4 @@
-# Makefile for the OpenMoko development system
+# Makefile for the webos-ports development system
 # Licensed under the GPL v2 or later
 
 MAKEFLAGS = -swr
