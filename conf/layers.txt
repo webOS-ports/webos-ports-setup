@@ -1,6 +1,6 @@
 bitbake,git://github.com/openembedded/bitbake.git,master,5ef9d98b343b9ed05167e5471eb9f7f12e97b045
 openembedded-core,git://github.com/openembedded/oe-core.git,master,5e03d1e83d0536a2fc69a88d3e5407108836203f
 meta-openembedded,git://github.com/openembedded/meta-oe.git,master,b232837c402cdbc5f2f1bd2afee5200df1383373
-meta-smartphone,git@github.com:webOS-ports/meta-smartphone.git,webOS-ports/master,HEAD
+meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/master,HEAD
 meta-webos,git://github.com/webOS-ports/meta-webos.git,webOS-ports/master,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
