@@ -107,11 +107,9 @@ function tag_layers() {
 function reset_layers() {
 	check_layer
 	if [ -e ${LAYERDIR} ] ; then
-		echo "WARNING!!!!"
-		echo "WARNING: ${LAYERNAME}: Removing local changes including stash and ignored files!!"
-		echo "WARNING!!!!"
+		echo "WARNING!!!!: ${LAYERNAME}: Removing local changes including stash and ignored files!!"
 		git stash clear
-		git clean -fdx
+		git clean -fdx | grep -v "\.pyc$"
 		if [ "${REV}" != "HEAD" ] ; then
 			git reset --hard ${REV}
 		else
