@@ -38,6 +38,10 @@ update:
 			echo -e "\\033[1;31m" "WARNING: you have different layers.txt, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
 			echo -e "\\e[0m" ; \
 		fi ; \
+		if ! diff -q webos-ports/conf/site.conf common/conf/site.conf; then \
+			echo -e "\\033[1;31m" "WARNING: you have different site.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
+			echo -e "\\e[0m" ; \
+		fi ; \
 		[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh update ) ; \
 		if [ "${RESET_ENABLED}" = "1" ] ; then \
 			[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh reset ) ; \
