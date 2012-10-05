@@ -10,6 +10,8 @@ URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 UPDATE_CONFFILES_ENABLED = "0"
 RESET_ENABLED = "0"
 
+SETUP_DIR = "webos-ports"
+
 ifneq ($(wildcard config.mk),)
 include config.mk
 endif
@@ -29,22 +31,22 @@ update:
 	if [ "${UPDATE_CONFFILES_ENABLED}" = "1" ] ; then \
 		${MAKE} update-conffiles ; \
 	fi
-	if [ -d webos-ports ] ; then \
-		if ! diff -q webos-ports/conf/bblayers.conf common/conf/bblayers.conf ; then \
+	if [ -d ${SETUP_DIR} ] ; then \
+		if ! diff -q ${SETUP_DIR}/conf/bblayers.conf common/conf/bblayers.conf ; then \
 			echo -e "\\033[1;31m" "WARNING: you have different bblayers.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
 			echo -e "\\e[0m" ; \
 		fi ; \
-		if ! diff -q webos-ports/conf/layers.txt common/conf/layers.txt; then \
+		if ! diff -q ${SETUP_DIR}/conf/layers.txt common/conf/layers.txt; then \
 			echo -e "\\033[1;31m" "WARNING: you have different layers.txt, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
 			echo -e "\\e[0m" ; \
 		fi ; \
-		if ! diff -q webos-ports/conf/site.conf common/conf/site.conf; then \
+		if ! diff -q ${SETUP_DIR}/conf/site.conf common/conf/site.conf; then \
 			echo -e "\\033[1;31m" "WARNING: you have different site.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
 			echo -e "\\e[0m" ; \
 		fi ; \
-		[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh update ) ; \
+		[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/${SETUP_DIR} scripts/oebb.sh update ) ; \
 		if [ "${RESET_ENABLED}" = "1" ] ; then \
-			[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh reset ) ; \
+			[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/${SETUP_DIR} scripts/oebb.sh reset ) ; \
 		fi; \
 	fi
 
@@ -65,19 +67,19 @@ setup-common common/.git/config:
 setup-%:
 	${MAKE} $*/.configured
 
-.PRECIOUS: webos-ports/.configured
-webos-ports/.configured: common/.git/config
-	@echo "preparing webos-ports tree"
-	[ -d webos-ports ] || ( mkdir -p webos-ports )
+.PRECIOUS: ${SETUP_DIR}/.configured
+${SETUP_DIR}/.configured: common/.git/config
+	@echo "preparing ${SETUP_DIR} tree"
+	[ -d ${SETUP_DIR} ] || ( mkdir -p ${SETUP_DIR} )
 	[ -e downloads ] || ( mkdir -p downloads )
 	[ -d scripts ] || ( cp -ra common/scripts scripts )
-	[ -e webos-ports/setup-env ] || ( cd webos-ports ; ln -sf ../common/setup-env . )
-	[ -e webos-ports/setup-local ] || ( cd webos-ports ; cp ../common/setup-local . )
-	[ -e webos-ports/downloads ] || ( cd webos-ports ; ln -sf ../downloads . )
-	[ -d webos-ports/conf ] || ( cp -ra common/conf webos-ports/conf )
-	[ -e webos-ports/conf/topdir.conf ] || echo "TOPDIR='`pwd`/webos-ports'" > webos-ports/conf/topdir.conf
-	[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/webos-ports scripts/oebb.sh update )
-	touch webos-ports/.configured
+	[ -e ${SETUP_DIR}/setup-env ] || ( cd ${SETUP_DIR} ; ln -sf ../common/setup-env . )
+	[ -e ${SETUP_DIR}/setup-local ] || ( cd ${SETUP_DIR} ; cp ../common/setup-local . )
+	[ -e ${SETUP_DIR}/downloads ] || ( cd ${SETUP_DIR} ; ln -sf ../downloads . )
+	[ -d ${SETUP_DIR}/conf ] || ( cp -ra common/conf ${SETUP_DIR}/conf )
+	[ -e ${SETUP_DIR}/conf/topdir.conf ] || echo "TOPDIR='`pwd`/${SETUP_DIR}'" > ${SETUP_DIR}/conf/topdir.conf
+	[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/${SETUP_DIR} scripts/oebb.sh update )
+	touch ${SETUP_DIR}/.configured
 
 .PHONY: update-common
 update-common: common/.git/config
@@ -93,12 +95,12 @@ update-common: common/.git/config
 	  ln -s common/Makefile Makefile )
 
 .PHONY: update-conffiles
-update-conffiles: webos-ports/.configured
-	@echo "syncing webos-ports config files up to date"
-	cp common/conf/auto.conf webos-ports/conf/auto.conf
-	cp common/conf/bblayers.conf webos-ports/conf/bblayers.conf
-	cp common/conf/layers.txt webos-ports/conf/layers.txt
-	cp common/conf/site.conf webos-ports/conf/site.conf
+update-conffiles: ${SETUP_DIR}/.configured
+	@echo "syncing ${SETUP_DIR} config files up to date"
+	cp common/conf/auto.conf ${SETUP_DIR}/conf/auto.conf
+	cp common/conf/bblayers.conf ${SETUP_DIR}/conf/bblayers.conf
+	cp common/conf/layers.txt ${SETUP_DIR}/conf/layers.txt
+	cp common/conf/site.conf ${SETUP_DIR}/conf/site.conf
 	cp common/scripts/* scripts/
 
 # End of Makefile
