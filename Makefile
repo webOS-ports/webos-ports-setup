@@ -33,16 +33,13 @@ update:
 	fi
 	if [ -d ${SETUP_DIR} ] ; then \
 		if ! diff -q ${SETUP_DIR}/conf/bblayers.conf common/conf/bblayers.conf ; then \
-			echo -e "\\033[1;31m" "WARNING: you have different bblayers.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
-			echo -e "\\e[0m" ; \
+			echo -e "\\033[1;31mWARNING: You have different bblayers.conf.\\n         Please sync it from common directory or call update-conffiles to replace all config files with new versions.\\e[0m"; \
 		fi ; \
 		if ! diff -q ${SETUP_DIR}/conf/layers.txt common/conf/layers.txt; then \
-			echo -e "\\033[1;31m" "WARNING: you have different layers.txt, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
-			echo -e "\\e[0m" ; \
+			echo -e "\\033[1;31mWARNING: You have different layers.txt.\\n         Please sync it from common directory or call update-conffiles to replace all config files with new versions.\\e[0m"; \
 		fi ; \
 		if ! diff -q ${SETUP_DIR}/conf/site.conf common/conf/site.conf; then \
-			echo -e "\\033[1;31m" "WARNING: you have different site.conf, please sync it from common directory or call update-conffiles to replace all config files with new versions" ; \
-			echo -e "\\e[0m" ; \
+			echo -e "\\033[1;31mWARNING: You have different site.conf\\n         Please sync it from common directory or call update-conffiles to replace all config files with new versions.\\e[0m"; \
 		fi ; \
 		[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/${SETUP_DIR} scripts/oebb.sh update ) ; \
 		if [ "${RESET_ENABLED}" = "1" ] ; then \
