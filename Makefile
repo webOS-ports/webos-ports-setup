@@ -64,8 +64,8 @@ setup-common common/.git/config:
 setup-%:
 	${MAKE} $*/.configured
 
-.PRECIOUS: ${SETUP_DIR}/.configured
-${SETUP_DIR}/.configured: common/.git/config
+.PRECIOUS: webos-ports/.configured
+webos-ports/.configured: common/.git/config
 	@echo "preparing ${SETUP_DIR} tree"
 	[ -d ${SETUP_DIR} ] || ( mkdir -p ${SETUP_DIR} )
 	[ -e downloads ] || ( mkdir -p downloads )
