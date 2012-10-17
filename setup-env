@@ -55,7 +55,7 @@ unset TOPDIR
 
 if [ ${TERM:-dumb} = dumb ]; then
    export PS1='OE $MACHINE@$DISTRO \w \$ '
-elif [ -n ${ZSH_VERSION} ]; then
+elif [ -n "${ZSH_VERSION}" ]; then
    export PS1=$'%{\e[1;32m%}OE $MACHINE@$DISTRO%{\e[1;34m%} %1d $%{\e[0m%} '
 else
    export PS1='\[\033[01;32m\]OE $MACHINE@$DISTRO\[\033[01;34m\] \w \$\[\033[00m\] '
