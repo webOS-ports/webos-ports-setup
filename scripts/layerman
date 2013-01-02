@@ -108,12 +108,14 @@ function reset_layers() {
 	check_layer
 	if [ -e ${LAYERDIR} ] ; then
 		echo "WARNING!!!!: ${LAYERNAME}: Removing local changes including stash and ignored files!!"
+		# abort rebase if git pull --rebase from update_layers got stuck on some local commit
+		git rebase --abort 2>/dev/null || true
 		git stash clear
 		git clean -fdx | grep -v "\.pyc$"
 		if [ "${REV}" != "HEAD" ] ; then
 			git reset --hard ${REV}
 		else
-			git reset --hard ${BRANCH}
+			git reset --hard origin/${BRANCH}
 		fi
 	fi
 	echo ""
