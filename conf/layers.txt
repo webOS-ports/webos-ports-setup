@@ -4,3 +4,4 @@ meta-openembedded,git://github.com/openembedded/meta-oe.git,danny,f8ad0760abf805
 meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/master,HEAD
 meta-webos,git://github.com/webOS-ports/meta-webos.git,webOS-ports/master,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
+meta-raspberrypi,git://github.com/webOS-ports/meta-raspberrypi.git,master,HEAD
