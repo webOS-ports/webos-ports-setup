@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = dylan
+BRANCH_COMMON = jansa/dylan
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
