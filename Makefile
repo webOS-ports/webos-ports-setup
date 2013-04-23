@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = danny
+BRANCH_COMMON = dylan
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
