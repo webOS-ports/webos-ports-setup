@@ -3,7 +3,7 @@
 if [[ $# -ne 2 ]] ; then
   echo "Usage: $0 source_dir target_dir"
   echo "          source_dir: /workspace/webos-ports/tmp-eglibc/deploy"
-  echo "          target_dir: /OE/web/webos-ports"
+  echo "          target_dir: user@server:web/webos-ports"
   exit 1
 fi
 
@@ -13,11 +13,6 @@ TARGET_DIR=$2
 if [ ! -d ${SOURCE_DIR}/images ] ; then
   echo "ERROR: ${SOURCE_DIR}/images doesn't exist"
   exit 2
-fi
-
-if [ ! -d ${TARGET_DIR} ] ; then
-  echo "ERROR: ${TARGET_DIR} doesn't exist"
-  exit 3
 fi
 
 echo "Syncing deploy dir from ${SOURCE_DIR} to ${TARGET_DIR}"
@@ -33,7 +28,7 @@ done
 
 # sync images ipk licenses tools
 cd ${SOURCE_DIR}
-rsync -av . ${TARGET_DIR}
+rsync -avir . ${TARGET_DIR}
 
 # sync ipk feed and remove missing
-rsync -avi --delete ipk/ ${TARGET_DIR}/ipk/
+#rsync -avi --delete ipk/ ${TARGET_DIR}/ipk/
