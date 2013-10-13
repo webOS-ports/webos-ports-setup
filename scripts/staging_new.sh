@@ -24,8 +24,8 @@ ssh ${REMOTE} mkdir ${STAGING_DIR}/wip
 ssh ${REMOTE} ln -snf ${CURRENT_STAGING} ${STAGING_DIR}/latest
 
 # move current source aside
-#mv ${SOURCE_DIR} ${SOURCE_DIR}.${CURRENT_STAGING}
-#mkdir -p ${SOURCE_DIR}
+mv ${SOURCE_DIR} ${SOURCE_DIR}.${CURRENT_STAGING}
+mkdir -p ${SOURCE_DIR}
 ln -sf info.${NEW} ${SOURCE_DIR}/info
 echo ${NEW} > ${SOURCE_DIR}/info.id
 echo "Opening testing feed number: ${NEW}"                | tee -a ${SOURCE_DIR}/info

@@ -29,3 +29,6 @@ DATE_CLOSED=`ssh ${REMOTE} tail -n1 ${SOURCE_DIR}/info`
 ssh ${REMOTE} "echo -e \"Merged to public feed\n'''Status:''' Closed (${DATE_CLOSED}) and merged to public feed (${DATE})\n${DATE}\" | tee -a ${SOURCE_DIR}/info"
 
 ssh ${REMOTE} rsync -avir ${SOURCE_DIR}/* ${TARGET_DIR}
+
+# sync ipk feed and remove missing, in this case we can, because all supported MACHINEs were built before staging was closed
+ssh ${REMOTE} rsync -avi --delete ${SOURCE_DIR}/ipk/ ${TARGET_DIR}/ipk/
