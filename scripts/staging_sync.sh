@@ -27,7 +27,7 @@ for IMG_FILE in */*.ext2 */*.bin */*.ubi */*.ubifs */*.img */*.jffs2 */*.sum.jff
 done
 
 # sync images ipk licenses tools
-cd ${SOURCE_DIR}
+cd ../ #${SOURCE_DIR}
 rsync -avir . ${TARGET_DIR}
 
 # sync ipk feed and remove missing
