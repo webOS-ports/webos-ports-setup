@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = dora
+BRANCH_COMMON = jansa/dora
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
