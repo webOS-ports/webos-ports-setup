@@ -23,6 +23,21 @@ ssh ${REMOTE} mv ${STAGING_DIR}/wip ${STAGING_DIR}/${CURRENT_STAGING}
 ssh ${REMOTE} mkdir ${STAGING_DIR}/wip
 ssh ${REMOTE} ln -snf ${CURRENT_STAGING} ${STAGING_DIR}/latest
 
+export TAG=webOS-ports/dora/${CURRENT_STAGING};
+[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=/OE/shr-core scripts/oebb.sh tag ${TAG} )
+cd webos-ports;
+# only for dirs with possible r-w access
+for i in openembedded-core meta-smartphone meta-webos-ports; do
+  cd $i;
+  git push origin ${TAG};
+  cd ..;
+done;
+cd buildhistory;
+git tag -a -m "${TAG}" ${TAG}; git push origin ${TAG};
+cd ..;
+# cannot do this, because prservice is running on different host
+# cp ../PRservice/prserv.sqlite3 ~/web/shr-core-staging/${TAG}/prserv.sqlite3.${TAG}
+
 # move current source aside
 mv ${SOURCE_DIR} ${SOURCE_DIR}.${CURRENT_STAGING}
 mkdir -p ${SOURCE_DIR}
