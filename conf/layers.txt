@@ -1,5 +1,5 @@
 bitbake,git://github.com/openembedded/bitbake.git,1.20,3c694e20df3b1d442603300786580e4b2f4bf5f3
-openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/dora,webOS-ports/dora-2014-03-06
+openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/dora,webOS-ports/dora-2014-03-27
 meta-openembedded,git://github.com/openembedded/meta-oe.git,dora,40e0f371f3eb1628655c484feac0cebf810737b4
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,fc06fb8ceb8eec4fe64463234ce6aaadd5f8a852
 meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/dora,webOS-ports/dora-2014-03-06
