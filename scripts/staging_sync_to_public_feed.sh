@@ -24,9 +24,9 @@ SOURCE_DIR=${STAGING_DIR}/${STAGING_NUMBER}
 TARGET_DIR=${PUBLIC_DIR}
 
 DATE=`date`
-DATE_CLOSED=`ssh ${REMOTE} tail -n1 ${SOURCE_DIR}/info`
+DATE_CLOSED=`ssh ${REMOTE} tail -n1 ${SOURCE_DIR}/info.${STAGING_NUMBER}`
 
-ssh ${REMOTE} "echo -e \"Merged to public feed\n'''Status:''' Closed (${DATE_CLOSED}) and merged to public feed (${DATE})\n${DATE}\" | tee -a ${SOURCE_DIR}/info"
+ssh ${REMOTE} "echo -e \"Merged to public feed\n'''Status:''' Closed (${DATE_CLOSED}) and merged to public feed (${DATE})\n${DATE}\" | tee -a ${SOURCE_DIR}/info.${STAGING_NUMBER}"
 
 ssh ${REMOTE} rsync -avir ${SOURCE_DIR}/* ${TARGET_DIR}
 

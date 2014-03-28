@@ -12,9 +12,9 @@ if [ -z "$REMOTE" ]; then
 fi
 
 echo "Closing ${STAGING_DIR}/${CURRENT_STAGING} and creating new ${STAGING_DIR}/${NEW}"
-echo "Closing testing feed number: ${CURRENT_STAGING}"    | tee -a ${SOURCE_DIR}/info
-echo "'''Status:''' Closed (${DATE}), ready for test"     | tee -a ${SOURCE_DIR}/info
-echo "${DATE}"                                            | tee -a ${SOURCE_DIR}/info
+echo "Closing testing feed number: ${CURRENT_STAGING}"    | tee -a ${SOURCE_DIR}/info.${CURRENT_STAGING}
+echo "'''Status:''' Closed (${DATE}), ready for test"     | tee -a ${SOURCE_DIR}/info.${CURRENT_STAGING}
+echo "${DATE}"                                            | tee -a ${SOURCE_DIR}/info.${CURRENT_STAGING}
 
 # one more sync to be sure everything was uploaded and update info file
 scripts/staging_sync.sh ${SOURCE_DIR} ${REMOTE}:${STAGING_DIR}/wip
@@ -43,9 +43,9 @@ mv ${SOURCE_DIR} ${SOURCE_DIR}.${CURRENT_STAGING}
 mkdir -p ${SOURCE_DIR}
 ln -sf info.${NEW} ${SOURCE_DIR}/info
 echo ${NEW} > ${SOURCE_DIR}/info.id
-echo "Opening testing feed number: ${NEW}"                | tee -a ${SOURCE_DIR}/info
-echo "'''Status:''' Building, '''NOT''' ready for test"   | tee -a ${SOURCE_DIR}/info
-echo "${DATE}"                                            | tee -a ${SOURCE_DIR}/info
+echo "Opening testing feed number: ${NEW}"                | tee -a ${SOURCE_DIR}/info.${NEW}
+echo "'''Status:''' Building, '''NOT''' ready for test"   | tee -a ${SOURCE_DIR}/info.${NEW}
+echo "${DATE}"                                            | tee -a ${SOURCE_DIR}/info.${NEW}
 
 echo ${NEW} > ${CURRENT_STAGING_FILE}
 echo "Please update manually with staging_update.sh"
