@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = daisy
+BRANCH_COMMON = jansa/daisy
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
