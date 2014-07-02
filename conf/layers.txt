@@ -1,6 +1,6 @@
-bitbake,git://github.com/openembedded/bitbake.git,1.22,fe083b674b20b254877a6d8249b11c9a7373866e
-openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/daisy,webOS-ports/daisy-2014-04-25
-meta-openembedded,git://github.com/openembedded/meta-oe.git,daisy,dca466c074c9a35bc0133e7e0d65cca0731e2acf
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,daisy,55dff304eff64e77338a82cfc5a0cb1ed5a07342
-meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/daisy,webOS-ports/daisy-2014-05-15
+bitbake,git://github.com/openembedded/bitbake.git,1.22,8e386a710023e000a504e05c13da0106df0c7f3a
+openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/daisy,webOS-ports/daisy-2014-07-02
+meta-openembedded,git://github.com/openembedded/meta-oe.git,daisy,ee24939c4c70b63a9fb7e93a58889a3231d3d367
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,daisy,ed05b91f137cb229e9ebababf9f72748aece1bf3
+meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/daisy,webOS-ports/daisy-2014-07-02
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,webOS-ports/daisy,HEAD
