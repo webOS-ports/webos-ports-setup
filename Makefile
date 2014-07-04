@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = sumo
+BRANCH_COMMON = jansa/sumo
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
