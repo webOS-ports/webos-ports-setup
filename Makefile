@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = hardknott
+BRANCH_COMMON = jansa/hardknott
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
