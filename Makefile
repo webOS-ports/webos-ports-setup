@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = dunfell
+BRANCH_COMMON = jansa/dunfell
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
