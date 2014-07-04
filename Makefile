@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = morty
+BRANCH_COMMON = jansa/morty
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
