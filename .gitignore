@@ -1,0 +1,13 @@
+bitbake
+meta-*
+openembedded-core
+
+sstate-cache
+tmp-glibc
+buildhistory
+cache
+
+bitbake-cookerdaemon.log
+warn.log
+log.*
+env.*

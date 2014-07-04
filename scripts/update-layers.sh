@@ -31,7 +31,7 @@ for LAYER in ${BASE_LAYERS}; do
     #echo "Finished updating '${BUILD}/${LAYER}'"
     cd ..
   else
-    git clone --shared -b ${BRANCH} /OE/lge/layers/${LAYER} ${LAYER}
+    git clone --shared -b ${BRANCH} /OE/layers/${LAYER} ${LAYER}
     cd ${LAYER} && git remote rename origin l && cd ..
   fi
 done
