@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = krogoth
+BRANCH_COMMON = jansa/krogoth
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
