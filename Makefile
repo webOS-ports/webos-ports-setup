@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = fido
+BRANCH_COMMON = jansa/fido
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
