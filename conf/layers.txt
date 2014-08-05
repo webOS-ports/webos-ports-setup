@@ -1,6 +1,6 @@
-bitbake,git://github.com/openembedded/bitbake.git,master,b82f724c271c43218dc28440219adcea968e2a26
-openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/master,webOS-ports/master-2014-07-03
-meta-openembedded,git://github.com/openembedded/meta-oe.git,master,87bbe91686e1bbc9036aacd924162f17db214aad
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,9f802b01e54709773e0a070beefb78d8f9d5c01f
-meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/master,webOS-ports/master-2014-07-02
+bitbake,git://github.com/openembedded/bitbake.git,master,38d4f65bf1cbcdd5a2d60dff0e1d2859c34ed62e
+openembedded-core,git://github.com/webOS-ports/oe-core.git,webOS-ports/master,webOS-ports/master-2014-08-04
+meta-openembedded,git://github.com/openembedded/meta-oe.git,master,6ec7600da97c0fb1a2fe0966a0319f006717d857
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,b0a32232e702970b7bce8b0ff1973f8e689cdff9
+meta-smartphone,git://github.com/webOS-ports/meta-smartphone.git,webOS-ports/master,webOS-ports/master-2014-08-04
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
