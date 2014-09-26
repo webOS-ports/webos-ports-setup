@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = wrynose
+BRANCH_COMMON = testing
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
