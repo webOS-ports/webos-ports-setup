@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = honister
+BRANCH_COMMON = unstable
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
