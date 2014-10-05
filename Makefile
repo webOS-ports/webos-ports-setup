@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = dizzy
+BRANCH_COMMON = jansa/dizzy
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
