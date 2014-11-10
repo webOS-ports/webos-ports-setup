@@ -8,6 +8,6 @@ fi
 CURRENT_DIR=`pwd`
 CURRENT_PROJECT=webos-ports
 CURRENT_STAGING=`cat ${CURRENT_STAGING_FILE}`
-SOURCE_DIR=${CURRENT_PROJECT}/tmp-eglibc/deploy
+SOURCE_DIR=${CURRENT_PROJECT}/tmp-glibc/deploy
 STAGING_DIR=htdocs/builds/${CURRENT_PROJECT}-staging
 PUBLIC_DIR=htdocs/builds/${CURRENT_PROJECT}
