@@ -2,7 +2,7 @@
 
 if [[ $# -ne 2 ]] ; then
   echo "Usage: $0 source_dir target_dir"
-  echo "          source_dir: /workspace/webos-ports/tmp-eglibc/deploy"
+  echo "          source_dir: /workspace/webos-ports/tmp-glibc/deploy"
   echo "          target_dir: user@server:web/webos-ports"
   exit 1
 fi
