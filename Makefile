@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = stable
+BRANCH_COMMON = morphis/mako-regression
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
