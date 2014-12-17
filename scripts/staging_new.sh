@@ -26,7 +26,7 @@ ssh ${REMOTE} ln -snf ${CURRENT_STAGING} ${STAGING_DIR}/latest
 export TAG=webOS-ports/dora/${CURRENT_STAGING};
 [ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=${CURRENT_DIR}/${CURRENT_PROJECT} scripts/oebb.sh tag ${TAG} )
 # only for dirs with possible r-w access
-for i in openembedded-core meta-smartphone meta-webos-ports; do
+for i in meta-webos-ports; do
   cd ${CURRENT_PROJECT}/$i;
   git push origin ${TAG};
   cd -;
