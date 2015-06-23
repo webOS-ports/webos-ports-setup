@@ -1,6 +1,6 @@
-bitbake,git://github.com/openembedded/bitbake.git,1.26,cd92e5dce5f5d61ecb7838bf964a7812e905509a
-openembedded-core,git://github.com/openembedded/openembedded-core.git,fido,b266977372f2d5704d00dd07b29ea49898ebf70e
-meta-openembedded,git://github.com/openembedded/meta-openembedded.git,fido,5b0305d9efa4b5692cd942586fb7aa92dba42d59
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,9925146ee780e7a1df8bf2bc958619b7cfdae690
+bitbake,git://github.com/openembedded/bitbake.git,1.26,9178a708ecd75758be360a5a6bb04c77b69be5d8
+openembedded-core,git://github.com/openembedded/openembedded-core.git,fido,b08ee8478f0cc2e2f9394c7e209dae45de2d845e
+meta-openembedded,git://github.com/openembedded/meta-openembedded.git,fido,10d3c8f85280a0bf867a8e4f84bcda81c290d28e
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,fido,fc026381545650e10fdd488d5b2a3b2d78f87793
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,fido,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,fido,HEAD
