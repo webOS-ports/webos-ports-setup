@@ -2,7 +2,7 @@ bitbake,git://github.com/openembedded/bitbake.git,1.30,c07f65feaba50b13a38635bd8
 openembedded-core,git://github.com/openembedded/openembedded-core.git,krogoth,48909052e7b19ba108ee7813c1efdbed0c2e06ab
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,krogoth,cb87e40af9abc66ef3c720c863487329a39aa47a
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,krogoth,d715f2c1d340fa38f8a9860acc73de5e14a38b75
-meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,krogoth,HEAD
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,krogoth,HEAD
-meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,krogoth,HEAD
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,HEAD
+meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,krogoth,fc210793755714ae61c90167f2d950b56bf2fd39
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,krogoth,af830164b4ef8f8e2579d422cf2eb7d19d8053ab
+meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,krogoth,0e97600a2c7f1445f189a558f216ee119737d37a
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,cd338c26e25640cd4d67d17646684e3d3314dc74
