@@ -3,4 +3,4 @@ openembedded-core,git://github.com/openembedded/openembedded-core.git,dizzy,9627
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,dizzy,5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,9925146ee780e7a1df8bf2bc958619b7cfdae690
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,dizzy,70f36723b79c0e237fc0564a2c6d9561ae1ae4d9
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,dizzy,1b4b075d0e333bab12b4e13a80ee89b3a46eb561
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,dizzy,b00bc3e5d9a78e06386b9802b415ac083e26e52a
