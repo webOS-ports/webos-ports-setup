@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = jethro
+BRANCH_COMMON = jansa/jethro
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
