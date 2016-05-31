@@ -1,8 +1,8 @@
-bitbake,git://github.com/openembedded/bitbake.git,master,138329c58e92744c56aae3ab70ceeef09613250c
-openembedded-core,git://github.com/openembedded/openembedded-core.git,master,d6241e4c94a0a72acfc57e96a59918c0b2146d65
-meta-openembedded,git://github.com/openembedded/meta-openembedded.git,master,4ff633a23a055ca1cb58b269846cbca649f42cea
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,0e5756c97ace089ddd9714f0eafffd71dd15c6ab
+bitbake,git://github.com/openembedded/bitbake.git,master,d830dccf948d188492cecfcf2ff053f31740dc21
+openembedded-core,git://github.com/openembedded/openembedded-core.git,master,bb4ead9b7b1400c37a72d148d9775bdf4210ec37
+meta-openembedded,git://github.com/openembedded/meta-openembedded.git,master,387824f1763c573fd05c97c4b94122350717340c
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,27617dde3560e2fe97989670725eb19747a0f48d
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,master,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
-meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,master,HEAD
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,HEAD
+meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,master,0e97600a2c7f1445f189a558f216ee119737d37a
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,69840c0bbe03c2e61601e2377c8e2adc264e0478
