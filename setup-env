@@ -27,6 +27,9 @@ export LD_LIBRARY_PATH=
 export LANG=C
 export MACHINE
 export DISTRO
+# Required for Python 3 starting with Yocto Morty release
+export LC_ALL=en_US.utf8
+
 #NOTE: if you add export definitions here add them below too!
 #
 # unset the following (unnecessary for the makefile, but safe)
