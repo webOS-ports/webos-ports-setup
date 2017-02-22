@@ -23,7 +23,7 @@ ssh ${REMOTE} mv ${STAGING_DIR}/wip ${STAGING_DIR}/${CURRENT_STAGING}
 ssh ${REMOTE} mkdir ${STAGING_DIR}/wip
 ssh ${REMOTE} ln -snf ${CURRENT_STAGING} ${STAGING_DIR}/latest
 
-export TAG=webOS-ports/master/${CURRENT_STAGING};
+export TAG=webOS-ports/pyro/${CURRENT_STAGING};
 [ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=${CURRENT_DIR}/${CURRENT_PROJECT} scripts/oebb.sh tag ${TAG} )
 # only for dirs with possible r-w access
 for i in meta-webos-ports; do

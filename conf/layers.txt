@@ -3,6 +3,6 @@ openembedded-core,git://github.com/openembedded/openembedded-core.git,master,def
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,master,56d77341bb438b3cec47fdf85536be43bcf08a86
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,krogoth,2b1871f0d139dc3caaa779a32a1931409c245a36
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,master,HEAD
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,pyro,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,master,4ad818a3106164de4cb8b794f62d1d7c48964864
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,68634deeed2a930a15eedd02e6b1de7d1e014d3b
