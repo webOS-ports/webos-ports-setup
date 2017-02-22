@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = rocko
+BRANCH_COMMON = jansa/rocko
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
