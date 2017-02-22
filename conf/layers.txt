@@ -1,8 +1,8 @@
-bitbake,git://github.com/openembedded/bitbake.git,1.34,98b8ea103390d5bc3583efb2e72dbac6529822a5
-openembedded-core,git://github.com/openembedded/openembedded-core.git,pyro,819aa151bd634122a46ffdd822064313c67f5ba5
-meta-openembedded,git://github.com/openembedded/meta-openembedded.git,pyro,9eaebc6e783f1394bb5444326cd05a976b3122e9
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,thud,010a29e0ab5eb2a7efde98ee0a4f78884281bc09
-meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,pyro,HEAD
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,pyro,HEAD
-meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,pyro,24837e0e442e9263328cadf482186d3729b76b54
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,pyro,6786c0709d2b072decd9383de38436d4befbcfbf
+bitbake,git://github.com/shr-distribution/bitbake.git,1.34,HEAD
+openembedded-core,git://git.openembedded.org/openembedded-core-contrib,jansa/pyro,HEAD
+meta-openembedded,git://git.openembedded.org/meta-openembedded-contrib,jansa/pyro,HEAD
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,jansa/thud,HEAD
+meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,jansa/pyro,HEAD
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,jansa/pyro,HEAD
+meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,jansa/pyro,HEAD
+meta-raspberrypi,git://github.com/shr-project/meta-raspberrypi.git,jansa/pyro,HEAD
