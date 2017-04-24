@@ -5,4 +5,4 @@ meta-qt5,git://github.com/meta-qt5/meta-qt5.git,krogoth,1100037b9becaaa5749602bc
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,pyro,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,pyro,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,master,4ad818a3106164de4cb8b794f62d1d7c48964864
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,68634deeed2a930a15eedd02e6b1de7d1e014d3b
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,8527a396d38aec7776182caca8b9a237e03c3965
