@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = pyro
+BRANCH_COMMON = stable
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
