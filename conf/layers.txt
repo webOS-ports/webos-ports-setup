@@ -1,8 +1,8 @@
 bitbake,git://github.com/openembedded/bitbake.git,1.36,223a0f68530571d2280f526bddbc718fa803a3dc
-openembedded-core,git://github.com/openembedded/openembedded-core.git,rocko,c1b711e265e2ff6ba74b0f6f568f231ddf476f8b
+openembedded-core,git://github.com/openembedded/openembedded-core.git,rocko,1b18cdf6b8bdb00ff5df165b9ac7bc2b10c87d57
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,rocko,dacfa2b1920e285531bec55cd2f08743390aaf57
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,rocko,32bb7d18a08d1c48873d7ab6332d4cc3815a4dff
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,rocko,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,rocko,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,rocko,151ff9a3bec5bd34d1398a02d7d6a45fd445caad
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,rocko,b58ccfc696e4fa6b680ae5ca79960312676d7af9
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,rocko,20358ec57a8744b0a02da77b283620fb718b0ee0
