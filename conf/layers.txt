@@ -2,7 +2,7 @@ bitbake,git://github.com/openembedded/bitbake.git,1.34,98b8ea103390d5bc3583efb2e
 openembedded-core,git://github.com/openembedded/openembedded-core.git,pyro,819aa151bd634122a46ffdd822064313c67f5ba5
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,pyro,9eaebc6e783f1394bb5444326cd05a976b3122e9
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,thud,18f82a8b32afa7de52004582c44e694cb5d54d84
-meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,pyro,fa9d11eccc7f837e0253f17c84a0167f52930afd
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,pyro,65afe1042b3ead83051609a22bea576cd2c438f3
+meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,pyro,47690f5c75833d50b458ef362b16af8c5a72fd27
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,pyro,a73f053924943a9a38f44d986bb5ab7454248380
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,pyro,24837e0e442e9263328cadf482186d3729b76b54
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,pyro,6786c0709d2b072decd9383de38436d4befbcfbf
