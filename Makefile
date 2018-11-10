@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = thud
+BRANCH_COMMON = jansa/thud
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
