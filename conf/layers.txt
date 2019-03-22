@@ -1,7 +1,7 @@
 bitbake,git://github.com/openembedded/bitbake.git,1.40,b59cb2bc63940b9ebd8288de7ca4b1d9e96e026c
 openembedded-core,git://github.com/openembedded/openembedded-core.git,thud,fbb688ab3eeca1bbfbaaaaffd8c81fd8052bcc68
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,thud,6ef9657068492d4644079c88f2adee9c3cac9543
-meta-qt5,git://github.com/meta-qt5/meta-qt5.git,thud,360ca76d24453a57d4b7b50577771cc882d62be2
+meta-qt5,git://github.com/meta-qt5/meta-qt5.git,thud,f83c1ca79b7ea5b0a61038faf18ed84927879e23
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,thud,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,thud,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,thud,ebe7681bec61faeb237345154a350307320ab189
