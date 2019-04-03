@@ -4,3 +4,5 @@ meta-openembedded,git://github.com/openembedded/meta-openembedded.git,master,043
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,thud,3b4b9398154d301a8e39501189da0ad7eee740f7
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,warrior,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,warrior,HEAD
+meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,warrior,ebe7681bec61faeb237345154a350307320ab189
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,7af614b2ee362765f299faaa732cafc436aa0ae1
