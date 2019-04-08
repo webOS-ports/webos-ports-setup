@@ -45,7 +45,6 @@ update:
 		if [ "${RESET_ENABLED}" = "1" ] ; then \
 			[ -e scripts/oebb.sh ] && ( OE_SOURCE_DIR=`pwd`/${SETUP_DIR} scripts/oebb.sh reset ) ; \
 		fi; \
-		sed -i 's/"sumo thud"/"warrior"/g' ${SETUP_DIR}/meta-raspberrypi/conf/layer.conf ; \
 	fi
 
 .PHONY: setup-common
