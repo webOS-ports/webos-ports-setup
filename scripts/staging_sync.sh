@@ -19,7 +19,7 @@ echo "Syncing deploy dir from ${SOURCE_DIR} to ${TARGET_DIR}"
 
 # count missing md5sums
 cd ${SOURCE_DIR}/images
-for IMG_FILE in */*.ext2 */*.ext4 */*.zip */*.bin */*.ubi */*.ubifs */*.img */*.jffs2 */*.sum.jffs2 */*.jffs2.nosummary */*.tgz */*.tar.gz */*.tar.bz2 */*.udfu */*.fastboot */*.cpio.gz */*.rpi-sdimg; do
+for IMG_FILE in */*.ext2 */*.ext4 */*.zip */*.bin */*.ubi */*.ubifs */*.img */*.jffs2 */*.sum.jffs2 */*.jffs2.nosummary */*.tgz */*.tar.gz */*.tar.bz2 */*.udfu */*.fastboot */*.cpio.gz */*.rpi-sdimg */*.wic.gz */*.wic.bmap; do
   if [ -e ${IMG_FILE} -a ! -h ${IMG_FILE} -a \( ! -e ${IMG_FILE}.md5 -o ${IMG_FILE}.md5 -ot ${IMG_FILE} \) ] ; then
     echo MD5: ${IMG_FILE}
     md5sum ${IMG_FILE} | sed 's#  .*/#  #g' > ${IMG_FILE}.md5
