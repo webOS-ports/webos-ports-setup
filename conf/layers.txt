@@ -1,9 +1,9 @@
 bitbake,git://github.com/openembedded/bitbake.git,1.42,34ed28a412af642a993642c14bd8b95d5ef22cd8
 openembedded-core,git://github.com/openembedded/openembedded-core.git,warrior,952bfcc3f4b9ee5ba584da0f991f95e80654355a
-meta-openembedded,git://github.com/openembedded/meta-openembedded.git,warrior,8d5dcd6522e9d15e68637b6d7dda0401f9bb91d0
+meta-openembedded,git://github.com/openembedded/meta-openembedded.git,warrior,0afee3eacfd18a9962013830028f9e54b4973657
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,warrior,2a5f9415e48a38f6f4eb0cf375737a2d8438e2fe
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,warrior,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,warrior,HEAD
 meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,warrior,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,warrior,b3b40b69e8320950a1c0ca33b02b38e0ff46329d
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,warrior,c2f2eaf4451691c24f17fd28b11d228e07e911dd
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,warrior,b48cc66703edbc2181282d1a666733b4c98dd286
