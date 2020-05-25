@@ -5,5 +5,5 @@ meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,cfcd40e3d01bd2db8ec9617c8
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,zeus,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,zeus,HEAD
 meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,zeus,HEAD
-meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,zeus,ff59241cce9932486e7a711fbd630f06f93d99c8
+meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,zeus,5128c1d104630017f32d8b8ab337f77a54b64e2b
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,zeus,0e05098853eea77032bff9cf81955679edd2f35d
