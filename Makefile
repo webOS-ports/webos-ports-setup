@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = zeus
+BRANCH_COMMON = herrie/debug
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
