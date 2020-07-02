@@ -4,6 +4,6 @@ meta-openembedded,git://github.com/openembedded/meta-openembedded.git,zeus,2b5dd
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,f13a3cec17a9eb0b11f8ecdb6a36df44f22e2831
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,zeus,79305a5d174acd308260a5db178cecdf7e80df31
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,herrie/debug,d02340645cfef2d984fef6a7e6383e07d3d8c5d8
-meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,zeus,d457e4936ca0ba4aea8bee29a357090836f7069c
+meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,zeus,55d88bbfe2f5e834e0412c1a57e99c9ec09a7e4a
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,zeus,ff59241cce9932486e7a711fbd630f06f93d99c8
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,zeus,85b75588fdedf72242870628f7c22f034d308740
