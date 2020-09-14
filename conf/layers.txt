@@ -3,8 +3,8 @@ openembedded-core,git://github.com/openembedded/openembedded-core.git,hardknott,
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,hardknott,bbe3855ec7d7e1417a42e9d7a4d1d3d338812088
 meta-python2,git://git.openembedded.org/meta-python2,hardknott,810d6d842f103eb59f18b06426106462b15de7e2
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,master,a2882fecc96019781880c38fc6a81a9b71c944ad
-meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,warrior,bdf9e62f5a13ee4c8193fe57adf512578271ac57
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,warrior,ac902cb557ae886062e1942757e619fb4bdce11a
-meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,warrior,a65667ab8356455557869c2e24cd6ad6a6cec61f
+meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,hardknott,f5e0379951d32f01da229ecb017b885d618aa82c
+meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,hardknott,a16b56c41fe0c05be62460ad9bb522542ebd0c52
+meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,hardknott,ed9718683f0505e19b07f79ea6e305347c62036c
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,hardknott,38b03212997a62ee2271133cad3a10ac39ad0f4b
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,master,d4d1441bd217f1a3dc353a6c20eadceb819c8e37
