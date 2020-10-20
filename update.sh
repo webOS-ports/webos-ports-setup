@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ $# -eq 1 ] && LAYERS_DIR=$1 || LAYERS_DIR=~
+[ $# -ge 1 ] && LAYERS_DIR=$1 || LAYERS_DIR=~
 
 pushd `dirname $0` > /dev/null
 SCRIPT_DIR=`pwd -P`
@@ -8,6 +8,7 @@ popd > /dev/null
 
 MSG=${SCRIPT_DIR}/commit-message.txt
 RU="git remote update origin"
+[ $# -lt 2 -o "$2" != "ru" ] && RU=""
 
 echo -e "conf/layers.txt: Use latest revisions" > ${MSG}
 
