@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = gatesgarth
+BRANCH_COMMON = hardknott
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
