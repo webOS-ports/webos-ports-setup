@@ -1,4 +1,4 @@
-bitbake,git://github.com/openembedded/bitbake.git,master,36ee858415866a122784b05f06e2af0c92dfcafd
+bitbake,git://github.com/openembedded/bitbake.git,master,47b64cfacd7c498ef9ed5486d117f2d69a39f225
 openembedded-core,git://github.com/openembedded/openembedded-core.git,master,7d94f9209ebaaf59ea001239a889dd7f928a0e7c
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,master,50bbf80abf570d1d652ec2f4bc5878e939c688d3
 meta-python2,git://git.openembedded.org/meta-python2,master,c43c29e57f16af4e77441b201855321fbd546661
