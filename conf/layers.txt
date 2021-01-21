@@ -3,8 +3,8 @@ openembedded-core,git://github.com/openembedded/openembedded-core.git,gatesgarth
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,gatesgarth,b9dcf17700014dec679307dc1247882dccd439ca
 meta-python2,git://git.openembedded.org/meta-python2,gatesgarth,27d2aebdb4d78a608798a4f617d9bcfcbe4a635b
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,gatesgarth,7a9f639fbd632dbe23af95c7b8123a0b907c6179
-meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,gatesgarth,HEAD
-meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,gatesgarth,HEAD
+meta-smartphone,git://github.com/wikomeme/meta-smartphone-1.git,testing/halium-9.0,HEAD
+meta-webos-ports,git://github.com/wikimeme/meta-webos-ports.git,testing/halium-9.0,HEAD
 meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,gatesgarth,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,gatesgarth,e34110e3c1e7d96a5644f6c7e6b36d4e19fbc934
 meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,gatesgarth,09a3c11696c75593f8e475da5dfb401016c6aaca
