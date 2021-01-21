@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = testing
+BRANCH_COMMON = herrie/volla
 
 URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
 
