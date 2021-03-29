@@ -1,5 +1,5 @@
-bitbake,git://github.com/openembedded/bitbake.git,1.48,7a6517243dbfecfd78f82f6709fbeaab2fb03e2c
-openembedded-core,git://github.com/openembedded/openembedded-core.git,gatesgarth,6311cb4930bd0add7aec61e5e0df6bb7ae0c4481
+bitbake,git://github.com/openembedded/bitbake.git,1.48,5d02c98489d3a5836676b9c3fb3bd0157449db2b
+openembedded-core,git://github.com/openembedded/openembedded-core.git,gatesgarth,fdae970656cc421c542af9856bc9ae038c61db13
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,gatesgarth,945f062ff098dc9c8ba8d22c5eef88adec60730d
 meta-python2,git://git.openembedded.org/meta-python2,gatesgarth,56288c2599d7a6df6e34e8b07b7dc3d4d2d71e30
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,gatesgarth,2b33a5d5e888370bb56685b86aa82b73624f19f0
