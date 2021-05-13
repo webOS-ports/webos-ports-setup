@@ -2,7 +2,7 @@ bitbake,https://git.openembedded.org/bitbake-contrib,jansa/1.50,HEAD
 openembedded-core,https://git.openembedded.org/openembedded-core-contrib,jansa/hardknott,HEAD
 meta-openembedded,https://git.openembedded.org/meta-openembedded-contrib,jansa/hardknott,HEAD
 meta-python2,https://github.com/shr-project/meta-python2,jansa/hardknott,HEAD
-meta-qt5,https://github.com/meta-qt5/meta-qt5.git,jansa/hardknott,HEAD
+meta-qt5,https://github.com/meta-qt5/meta-qt5.git,jansa/master,HEAD
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,jansa/hardknott,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,jansa/hardknott,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,jansa/hardknott,HEAD
