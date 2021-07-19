@@ -1,10 +1,10 @@
 bitbake,git://github.com/openembedded/bitbake.git,1.48,a1987f240cdedc6a44bf255a3a76879aa4cd1cd3
 openembedded-core,git://github.com/openembedded/openembedded-core.git,gatesgarth,d47b7cdc3508343349f3bb3eacb2dc3227dd94d2
 meta-openembedded,git://github.com/openembedded/meta-openembedded.git,gatesgarth,f3f7a5f1a4713f145107bb043e0d14cb3a51c62f
-meta-python2,git://git.openembedded.org/meta-python2,gatesgarth,d9662a41f67c3425a356bce4ec29f82058127344
+meta-python2,git://git.openembedded.org/meta-python2,gatesgarth,3fae17aece0e6d82f56965fe501bf7080c671df8
 meta-qt5,git://github.com/meta-qt5/meta-qt5.git,gatesgarth,2b33a5d5e888370bb56685b86aa82b73624f19f0
 meta-smartphone,git://github.com/shr-distribution/meta-smartphone.git,gatesgarth,HEAD
 meta-webos-ports,git://github.com/webOS-ports/meta-webos-ports.git,gatesgarth,HEAD
 meta-pine64-luneos,git://github.com/webOS-ports/meta-pine64-luneos.git,gatesgarth,HEAD
 meta-rpi-luneos,git://github.com/webOS-ports/meta-rpi-luneos.git,gatesgarth,e34110e3c1e7d96a5644f6c7e6b36d4e19fbc934
-meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,gatesgarth,e6e604616dfd91e654cdd7a535614e93c27c6965
+meta-raspberrypi,git://github.com/agherzan/meta-raspberrypi.git,gatesgarth,e5e976da0bed8eb9d3c4dc61e8ee3a6a864ff56b
