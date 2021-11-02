@@ -5,7 +5,7 @@ MAKEFLAGS = -swr
 
 BRANCH_COMMON = honister
 
-URL_COMMON = "git://github.com/webOS-ports/webos-ports-setup.git"
+URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
 UPDATE_CONFFILES_ENABLED = "0"
 RESET_ENABLED = "0"
