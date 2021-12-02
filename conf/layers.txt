@@ -7,4 +7,4 @@ meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,hardknot
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,hardknott,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,hardknott,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,hardknott,3940f64e75ba7a4f657fcdc6686a00147cc70258
-meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,hardknott,0dc08f973725e6be1ad5156e1c995e94399f69d5
+meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,hardknott,b4ec97e4eb8e36efd1f7e2f8ae020a9e55cfc239
