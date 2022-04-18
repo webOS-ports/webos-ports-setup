@@ -1,7 +1,7 @@
-bitbake,https://github.com/openembedded/bitbake.git,2.0,2ab60c7be124d928d304ab1fb73f0dbff29964ae
-openembedded-core,https://github.com/openembedded/openembedded-core.git,kirkstone,24e3b2ee56e0b59aa280191bd00fdfc773f0a973
-meta-openembedded,https://github.com/openembedded/meta-openembedded.git,master,2e0f15d3f48f49e3e414f4a51b957e52fe1c0d6a
-meta-qt5,https://github.com/meta-qt5/meta-qt5.git,master,4837db1d965c51e4a2c5971e6a126c896e5b401a
+bitbake,https://github.com/openembedded/bitbake.git,2.0,c212b0f3b542efa19f15782421196b7f4b64b0b9
+openembedded-core,https://github.com/openembedded/openembedded-core.git,kirkstone,92fcb6570bddd0c5717d8cfdf38ecf3e44942b0f
+meta-openembedded,https://github.com/openembedded/meta-openembedded.git,master,6fbe7f748706229f43a2e06b08b6e1e729942314
+meta-qt5,https://github.com/meta-qt5/meta-qt5.git,master,5b71df60e523423b9df6793de9387f87a149ac42
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,master,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,master,HEAD
