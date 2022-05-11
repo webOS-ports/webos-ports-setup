@@ -7,5 +7,5 @@ meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,kirkstone,H
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,kirkstone,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,kirkstone,6e32491ba47341f5a9e97b0af555f2acd7e8a74c
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,kirkstone,0135a02ea577bd39dd552236ead2c5894d89da1d
-meta-arm,https://git.yoctoproject.org/meta-arm.git,kirkstone,2627002c85dee658ebb6a293496a72a927ad1f77
+meta-arm,https://git.yoctoproject.org/meta-arm.git,kirkstone,b838d40efe06c839d58cf39b785175d0ba7518c6
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,3d640e324637b7ffa657ac317003e393df369d71
