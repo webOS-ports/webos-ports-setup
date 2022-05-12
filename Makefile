@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = kirkstone
+BRANCH_COMMON = kirkstone-qt6
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 

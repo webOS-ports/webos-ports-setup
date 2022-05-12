@@ -3,7 +3,7 @@ openembedded-core,https://github.com/openembedded/openembedded-core.git,kirkston
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,kirkstone,fcc7d7eae82be4c180f2e8fa3db90a8ab3be07b7
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.3.0,f7c93372907d333183e1f453878396cfd0a28071
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,kirkstone,HEAD
-meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,kirkstone,HEAD
+meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,herrie/kirkstone-qt6,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,kirkstone,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,kirkstone,6e32491ba47341f5a9e97b0af555f2acd7e8a74c
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,kirkstone,0135a02ea577bd39dd552236ead2c5894d89da1d
