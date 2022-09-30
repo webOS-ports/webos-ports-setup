@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = langdale
+BRANCH_COMMON = mickledore
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
