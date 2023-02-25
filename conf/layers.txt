@@ -1,5 +1,5 @@
 bitbake,https://github.com/openembedded/bitbake.git,2.2,592ee222a1c6da42925fb56801f226884b6724ec
-openembedded-core,https://github.com/openembedded/openembedded-core.git,langdale,62b894d75fb3361ed4d5473ae69188bce390980a
+openembedded-core,https://github.com/openembedded/openembedded-core.git,langdale,ab1e3000cee9f5f3496a7e67cc59b2e08a681a89
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,langdale,30f4c2b3ae182513b967185e06bc8409a0ee6092
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.4,316d85855be0985de00fe6ad8ae3c7e7733836e6
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,langdale,HEAD
