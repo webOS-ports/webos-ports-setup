@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = mickledore
+BRANCH_COMMON = nanbield
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
