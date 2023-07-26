@@ -3,22 +3,23 @@
 SCRIPTDIR=/OE/layers/scripts
 
 RELEASE="master"
-BUILD="luneos"
+BUILD="nodistro"
 
-BUILD_BRANCH="jansa/styhead"
+BUILD_BRANCH="jansa/nodistro-styhead"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
-  meta-webos-ports \
-  meta-smartphone \
   meta-openembedded \
-  meta-pine64-luneos \
+  meta-qt5 \
   meta-qt6 \
   meta-clang \
   meta-raspberrypi \
-  meta-rockchip \
-  meta-rpi-luneos \
-  meta-arm \
   openembedded-core \
+  meta-browser \
+  meta-python2 \
+  meta-clang \
+  meta-virtualization \
+  meta-security \
+  meta-smartphone \
   bitbake \
 "
 
