@@ -2,7 +2,7 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="mickledore"
+RELEASE="nanbield"
 BUILD="luneos"
 
 BUILD_BRANCH="jansa/${RELEASE}"
