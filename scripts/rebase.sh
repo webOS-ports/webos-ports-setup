@@ -2,7 +2,7 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="kirkstone"
+RELEASE="langdale"
 BUILD="luneos"
 
 BUILD_BRANCH="jansa/${RELEASE}"

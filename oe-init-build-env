@@ -1,7 +1,7 @@
 unset LC_ALL; export LC_ALL
 export LANG=en_US.UTF-8
 
-# export INITPWD=/OE/build/luneos-kirkstone
+# export INITPWD=/OE/build/luneos-langdale
 export INITPWD=`pwd`
 
 BITBAKEPATH=${INITPWD}/bitbake/bin
