@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="kirkstone"
+RELEASE="master"
 BUILD="luneos"
 
-BUILD_BRANCH="jansa/${RELEASE}"
+BUILD_BRANCH="jansa/scarthgap"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-webos-ports \
@@ -13,6 +13,7 @@ BASE_LAYERS=" \
   meta-openembedded \
   meta-pine64-luneos \
   meta-qt6 \
+  meta-clang \
   meta-raspberrypi \
   meta-rockchip \
   meta-rpi-luneos \
