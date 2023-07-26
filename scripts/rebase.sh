@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="nanbield"
+RELEASE="master"
 BUILD="luneos"
 
-BUILD_BRANCH="jansa/${RELEASE}"
+BUILD_BRANCH="jansa/scarthgap"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-webos-ports \
