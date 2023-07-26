@@ -1,21 +1,23 @@
 #!/bin/bash
 
-SCRIPTDIR=/OE/lge/layers/scripts
+SCRIPTDIR=/OE/layers/scripts
 
 RELEASE="kirkstone"
-BUILD="webos"
+BUILD="luneos"
 
 BUILD_BRANCH="jansa/${RELEASE}"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
-  meta-webosose \
+  meta-webos-ports \
+  meta-smartphone \
+  meta-openembedded \
+  meta-pine64-luneos \
   meta-qt6 \
-  meta-oe \
   meta-raspberrypi \
-  meta-virtualization \
-  meta-security \
-  meta-clang \
-  oe-core \
+  meta-rockchip \
+  meta-rpi-luneos \
+  meta-arm \
+  openembedded-core \
   bitbake \
 "
 

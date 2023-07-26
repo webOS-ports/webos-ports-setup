@@ -1,0 +1,38 @@
+unset LC_ALL; export LC_ALL
+export LANG=en_US.UTF-8
+
+# export INITPWD=/OE/build/luneos-kirkstone
+export INITPWD=`pwd`
+
+BITBAKEPATH=${INITPWD}/bitbake/bin
+case "${PATH}" in
+*${BITBAKEPATH}*) ;;
+*) export PATH=${INITPWD}/openembedded-core/scripts:${BITBAKEPATH}:$PATH ;;
+esac
+
+if [ -z "$ZSH_NAME" ] && [ "$0" = "./oe-init-build-env" ]; then
+   echo "ERROR: This script needs to be sourced. Please run as '. ./oe-init-build-env'"
+   exit 1
+fi
+
+# used in runqemu bitbake wrapper for pseudodone location
+# export BUILDDIR="${INITPWD}/BUILD"
+
+export BB_ENV_PASSTHROUGH_ADDITIONS="MACHINE DISTRO TCMODE TCLIBC http_proxy ftp_proxy https_proxy all_proxy ALL_PROXY no_proxy SSH_AGENT_PID SSH_AUTH_SOCK BB_SRCREV_POLICY SDKMACHINE BB_NUMBER_THREADS PARALLEL_MAKE GIT_PROXY_COMMAND GIT_PROXY_IGNORE SOCKS5_PASSWD SOCKS5_USER WEBOS_DISTRO_BUILD_ID PSEUDO_DISABLED PSEUDO_BUILD"
+
+[ -z "${MACHINES}" ] && MACHINES="qemux86-64"
+[ -z "${MACHINE}" ] && MACHINE="qemux86-64"
+[ -z "${DISTRO}" ] && DISTRO="luneos"
+
+export MACHINES MACHINE DISTRO
+echo "Altered environment for ${MACHINE}@${DISTRO} development"
+
+[ -f /OE/.bash_aliases ] && . /OE/.bash_aliases
+
+if [ ${TERM:-dumb} = dumb ]; then
+   export PS1='OE $MACHINE@$DISTRO \w \$ '
+elif [ -n "${ZSH_VERSION}" ]; then
+   export PS1=$'%{\e[1;32m%}OE $MACHINE@$DISTRO%{\e[1;34m%} %1d $%{\e[0m%} '
+else
+   export PS1='\[\033[01;32m\]OE $MACHINE@$DISTRO\[\033[01;34m\] \w \$\[\033[00m\] '
+fi
