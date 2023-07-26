@@ -1,7 +1,7 @@
 unset LC_ALL; export LC_ALL
 export LANG=en_US.UTF-8
 
-# export INITPWD=/OE/build/luneos-nanbield
+# export INITPWD=/OE/build/oe-core
 export INITPWD=`pwd`
 
 BITBAKEPATH=${INITPWD}/bitbake/bin
@@ -22,7 +22,7 @@ export BB_ENV_PASSTHROUGH_ADDITIONS="MACHINE DISTRO TCMODE TCLIBC http_proxy ftp
 
 [ -z "${MACHINES}" ] && MACHINES="qemux86-64"
 [ -z "${MACHINE}" ] && MACHINE="qemux86-64"
-[ -z "${DISTRO}" ] && DISTRO="luneos"
+# [ -z "${DISTRO}" ] && DISTRO="luneos"
 
 export MACHINES MACHINE DISTRO
 echo "Altered environment for ${MACHINE}@${DISTRO} development"
