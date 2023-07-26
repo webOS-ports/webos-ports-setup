@@ -1,0 +1,290 @@
+# CONF_VERSION is increased each time build/conf/ changes incompatibly
+CONF_VERSION = "1"
+
+# additionally build a tar.gz image file (as needed for installing on SD)
+#IMAGE_FSTYPES = "jffs2 tar.gz"
+# speed up build by parallel building - usefull for multicore cpus
+#PARALLEL_MAKE = "-j 4"
+#BB_NUMBER_THREADS = "4"
+# avoid multiple locales generation to speedup the build and save space, but keep at least en_US and en_GB here
+# see LIBC_DEPENDENCIES in meta/conf/distro/include/tclibc-eglibc.inc:
+#LIBC_GENERATE_LOCALES = "en_US.UTF-8 en_GB.UTF-8 cs_CZ.UTF-8"
+# but you need all locales for IMAGE_LINGUAS
+#MAGE_LINGUAS = "en-us en-gb cs-cz"
+# completely disable generation of locales. If building qemu fails this might help
+#ENABLE_BINARY_LOCALE_GENERATION = "0"
+# enable local builds for SHR apps
+#require local-builds.inc
+
+# Make use of my SMP box
+PARALLEL_MAKE="-j 64"
+#BB_NUMBER_THREADS = "2"
+#BB_NUMBER_PARSE_THREADS = "1000"
+
+#IMAGE_FSTYPES = "tar.gz"
+IMAGE_FSTYPES_qemux86 = "wic.vmdk"
+#IMAGE_FSTYPES_qemux86-64 = "wic.vmdk ext4"
+IMAGE_FSTYPES_raspberrypi3-64 = "rpi-sdimg"
+IMAGE_FSTYPES_raspberrypi3 = "rpi-sdimg"
+IMAGE_FSTYPES_append_genericx86-64 = " wic wic.bmap"
+#IMAGE_FSTYPES_append_qemux86-64 = " wic wic.bmap"
+
+QEMU_USE_KVM = 'True'
+INHERIT += 'testimage'
+TEST_QEMUBOOT_TIMEOUT = '1500'
+SDK_EXT_TYPE = 'minimal'
+SDK_INCLUDE_TOOLCHAIN = '1'
+
+require conf/distro/include/yocto-uninative.inc
+INHERIT += "uninative"
+
+#PACKAGE_CLASSES ?= "package_rpm"
+BB_GENERATE_MIRROR_TARBALLS = "1"
+BB_SRCREV_POLICY="clear"
+PATCHRESOLVE = "noop"
+#PATCHTOOL = "patch"
+#PATCHTOOL = "git"
+# INHERIT += "debian"
+#INHERIT += "world-image"
+INHERIT += "rm_work"
+
+# ICECC_DISABLED = "1"
+# INHERIT += "icecc"
+
+#INHERIT += "archiver"
+#ARCHIVER_MODE[src] = "prepatch"
+#ARCHIVER_MODE[diff] = "1"
+#ARCHIVER_MODE[diff-exclude] ?= ".pc autom4te.cache patches no yes"
+#ARCHIVER_MODE[dumpdata] = "1"
+#ARCHIVER_MODE[recipe] = "1"
+#ARCHIVER_MODE[log] = "1"
+
+#INHERIT += "targets-list-image"
+
+#ASSUME_PROVIDED += "qemu-native"
+#PACKAGECONFIG_append_class-native_pn-qemu-system-native = " virglrenderer spice libusb usb-redir gtk+ sdl virtfs"
+
+# we don't need to build multiple LIBC
+#TCLIBCAPPEND = ""
+
+#TCLIBC="uclibc"
+
+TERMCMD = "${SCREEN_TERMCMD}"
+TERMCMDRUN = "${SCREEN_TERMCMDRUN}"
+#require conf/distro/include/shr-autorev.inc
+
+#export PSEUDO_DEBUG="4"
+#export LD_DEBUG="all"
+#export PSEUDO_OPTS="-l"
+
+DISTRO_FEED_PREFIX="jama"
+DISTRO_FEED_URI="http://jama.dyndns-home.com/org.openembedded.shr-core/"
+
+#SDKMACHINE ?= "i686"
+#SDKMACHINE ?= "x86-64"
+
+#PERSISTENT_DIR = "${TOPDIR}/cache"
+#BUILDHISTORY_DIR = "${TOPDIR}/buildhistory"
+
+INHERIT += "buildhistory"
+BUILDHISTORY_COMMIT ?= "1"
+BUILDHISTORY_COMMIT_AUTHOR ?= "Martin Jansa <Martin.Jansa@gmail.com>"
+#BB_SIGNATURE_HANDLER_forcevariable = "OEBasic"
+#BB_SIGNATURE_HANDLER_forcevariable = "OEBasicHashFoo"
+#BB_SIGNATURE_HANDLER_forcevariable = "OEBasicHashLite"
+
+# BB_SIGNATURE_HANDLER ?= "OEEquivHash"
+# BB_HASHSERVE = "auto"
+
+#SSTATE_MIRRORS ?= "file://.* file:///OE/oe-core/sstate-2-cache/PATH"
+#SSTATE_MIRRORS ?= "file://.* http://localhost/sstate-remote-cache/PATH"
+
+#DEFAULTTUNE_spitz = "xscale"
+PREFERRED_ARM_INSTRUCTION_SET              ?= "thumb"
+ARM_INSTRUCTION_SET = "${PREFERRED_ARM_INSTRUCTION_SET}"
+
+# Prefer libjpeg-turbo
+PREFERRED_PROVIDER_jpeg = "libjpeg-turbo"
+PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
+
+#DISTRO_FEATURES_remove = "bluez5"
+#DISTRO_FEATURES_append = " bluez4"
+
+
+DISTRO_FEATURES_remove = "x11"
+PREFERRED_PROVIDER_virtual/libgl = "mesa-gl"
+PREFERRED_PROVIDER_virtual/mesa = "mesa-gl"
+DISTRO_FEATURES_append = " pam"
+
+# PRSERV_HOST = "localhost:0"
+
+LICENSE_FLAGS_WHITELIST = "commercial"
+
+IMAGE_FEATURES_append = " package-management"
+#DISTRO_FEATURES_append = " api-documentation"
+#IMAGE_FEATURES_append = " package-management read-only-rootfs"
+
+#DISTRO_FEATURES_append = " opengl wayland ld-is-gold ptest"
+#DISTRO_FEATURES_append = " systemd opengl wayland ld-is-gold ptest"
+DISTRO_FEATURES_append = " systemd ptest"
+DISTRO_FEATURES_append = " opengl wayland"
+DISTRO_FEATURES_append = " ld-is-gold"
+DISTRO_FEATURES_BACKFILL_CONSIDERED = "sysvinit"
+VIRTUAL-RUNTIME_init_manager = "systemd"
+VIRTUAL-RUNTIME_initscripts = ""
+INHIBIT_UPDATERCD_BBCLASS = "1"
+EXTRA_IMAGE_FEATURES = "debug-tweaks"
+
+#IMAGE_VERSION_SUFFIX_forcevariable = "-release-1"
+MODULE_TARBALL_DEPLOY = "1"
+
+#IMAGE_INSTALL_append = "zlib"
+
+#DEBUG_BUILD_pn-bash = "1"
+#DEBUG_BUILD_pn-libjpeg-turbo = "1"
+
+#QT5_VERSION = "5.4.1"
+#OE_QMAKE_DEBUG_OUTPUT = "-d"
+#require conf/distro/include/qt5-versions.inc
+
+# for qtwebkit etc
+###PACKAGECONFIG_append_pn-qtbase = " icu gl accessibility examples kms eglfs gles2"
+# for x11 drop gles2
+PACKAGECONFIG_append_pn-qtbase = " icu gl accessibility examples kms eglfs ${@bb.utils.contains('DISTRO_FEATURES', 'x11', '', 'gles2', d)}"
+#PACKAGECONFIG_append_pn-qtbase = " icu gl accessibility directfb examples kms eglfs gles2"
+#PACKAGECONFIG_remove_pn-qtbase = "gl xcb xcb-xinput glib xkb xkbcommon eglfs directfb"
+#PACKAGECONFIG_remove_pn-qtwayland = "xcomposite-egl xcomposite-glx"
+#PACKAGECONFIG_append_pn-qtwebengine = " icu"
+
+#PACKAGECONFIG_remove_pn-libpcap = "ipv"6"
+#PACKAGECONFIG_remove_pn-gnutls = "libidn"
+#PACKAGECONFIG_remove_pn-iputils = "libidn"
+
+#PACKAGECONFIG_pn-mesa-demos = ""
+#drm osmesa freetype2 gbm egl gles1 gles2"
+
+# causes dependency on MLPREFIX glibc when building for x86_64
+PACKAGECONFIG_remove_pn-xen-tools = "hvm"
+
+#PREFERRED_VERSION_nettle = "2.7.1"
+#PREFERRED_VERSION_mesa = "9.1.3+git%"
+#PACKAGECONFIG_append_pn-mesa = " gallium"
+#PACKAGECONFIG_pn-mesa = "egl dri wayland gallium gallium-egl gallium-gbm gallium-llvm openvg x11"
+# PACKAGECONFIG="wayland                    opengl egl gles gbm dri gallium virgl                    x11 dri3                                        elf-tls                  gallium gallium-llvm"
+# qtwayland's xcomposite-glx PACKAGECONFIG which is enabled by default with x11
+# fails when mesa provides gles as well 
+# ERROR: Feature 'xcomposite-glx' was enabled, but the pre-condition 'features.wayland-client && features.opengl && !features.opengles2 && features.xlib && libs.xcomposite && libs.glx' failed.
+# ERROR: Feature 'xcomposite-glx' was enabled, but the pre-condition 'features.wayland-server && features.opengl && !features.opengles2 && libs.xcomposite && libs.glx' failed.
+#PACKAGECONFIG_remove_pn-mesa = "${@bb.utils.contains('DISTRO_FEATURES', 'x11', 'gles', '', d)}"
+
+#PACKAGECONFIG_pn-mesa = "x11"
+#GALLIUMDRIVERS_pn-mesa = "swrast,svga"
+#EGL_PLATFORMS_pn-mesa = "fbdev,drm,wayland"
+
+#IMAGE_INSTALL_append_pn-core-image-sato = " chromium-wayland"
+#IMAGE_INSTALL_append_pn-core-image-sato = " piglit"
+#IMAGE_INSTALL_append_pn-core-image-base = " packagegroup-ros-world piglit glmark2 vlc bigbuckbunny-720p bigbuckbunny-480p bigbuckbunny-1080p"
+#IMAGE_INSTALL_append_pn-core-image-sato = " packagegroup-ros-world piglit glmark2 vlc bigbuckbunny-720p bigbuckbunny-480p bigbuckbunny-1080p"
+IMAGE_INSTALL_append_pn-core-image-weston = " qtbase qtbase-examples qtbase-plugins"
+#require conf/distro/include/no-static-libs.inc
+#
+require conf/distro/include/no-static-libs.inc
+#equire conf/distro/include/security_flags.inc
+#
+
+# enable reporting
+# needs http://patchwork.openembedded.org/patch/68735/
+ERR_REPORT_SERVER = "errors.yoctoproject.org"
+ERR_REPORT_PORT = "80"
+ERR_REPORT_USERNAME = "Martin Jansa"
+ERR_REPORT_EMAIL = "Martin.Jansa@gmail.com"
+ERR_REPORT_UPLOAD_FAILURES = "1"
+INHERIT += "report-error"
+
+#IMAGE_GEN_DEBUGFS = "1"
+#IMAGE_FSTYPES_DEBUGFS = "tar.gz"
+
+#INHERIT += "image-mklibs"
+#MKLIBS_OPTIMIZED_IMAGES = "core-image-minimal"
+
+INHERIT += "buildstats buildstats-summary"
+
+#INHERIT += "externalsrc"
+
+#EXTERNALSRC_pn-zlib = "/OE/projects/zlib"
+#EXTERNALSRC_BUILD_pn-zlib = "/OE/projects/zlib"
+#EXTERNALSRC_pn-zlib = "/OE/projects/zlib/build"
+#
+UVESA_MODE = "1600x1200-32"
+
+#CONNECTIVITY_CHECK_URIS = "git://git.yoctoproject.org/yocto-firewall-test;protocol=git;rev=HEAD"
+#CONNECTIVITY_CHECK_URIS = "git://git.yoctoproject.org/yocto-firewall-test;protocol=git;rev=master"
+
+# master INHERIT += "reproducible_build_simple"
+
+#KERNEL_IMAGETYPE_raspberrypi3 = "uImage"
+ENABLE_UART = "1"
+RPI_USE_U_BOOT = "1"
+MACHINE_FEATURES_append_raspberrypi3 = " vc4graphics"
+
+DEFAULT_WARN_QA ?= "\
+    ldflags useless-rpaths rpaths staticdev libdir xorg-driver-abi \
+    textrel already-stripped incompatible-license files-invalid \
+    installed-vs-shipped compile-host-path install-host-path \
+    pn-overrides infodir build-deps \
+    unknown-configure-option symlink-to-sysroot multilib \
+    invalid-packageconfig host-user-contaminated uppercase-pn patch-fuzz \
+"
+
+ERROR_QA_append = " ${DEFAULT_WARN_QA}"
+WARN_QA_remove = "${DEFAULT_WARN_QA}"
+
+INSANE_SKIP_libmpeg2_pn-mpeg2dec = "textrel"
+
+#ERROR_QA_remove_pn-systemd = "textrel"
+#INSANE_SKIP_systemd_pn-systemd_powerpc = "textrel"
+#INSANE_SKIP_systemd_pn-systemd_powerpc = "textrel"
+
+BB_DISKMON_DIRS = "\
+    STOPTASKS,${TMPDIR},1G,100K \
+    STOPTASKS,${DL_DIR},1G,100K \
+    STOPTASKS,${SSTATE_DIR},1G,100K \
+    STOPTASKS,/tmp,100M,100K \
+    ABORT,${TMPDIR},100M,1K \
+    ABORT,${DL_DIR},100M,1K \
+    ABORT,${SSTATE_DIR},100M,1K \
+    ABORT,/tmp,10M,1K"
+
+TCLIBC_qemux86-64 = "musl"
+DISTRO_FEATURES_remove = "gobject-introspection-data"
+#TCLIBC_qemux86copy = "musl"
+
+# DEBUG_BUILD = "1"
+#DEBUG_OPTIMIZATION = "-Os -fno-omit-frame-pointer ${DEBUG_FLAGS} -pipe"
+#DEBUG_OPTIMIZATION = "-O -fno-omit-frame-pointer ${DEBUG_FLAGS} -pipe"
+#DEBUG_OPTIMIZATION = "-O1 -fno-omit-frame-pointer ${DEBUG_FLAGS} -pipe"
+
+#RUST_VERSION = "1.34.2"
+#PREFERRED_VERSION_rust-native ?= "${RUST_VERSION}"
+#PREFERRED_VERSION_rust-cross-${TARGET_ARCH} ?= "${RUST_VERSION}"
+#PREFERRED_VERSION_rust-llvm-native ?= "${RUST_VERSION}"
+#PREFERRED_VERSION_libstd-rs ?= "${RUST_VERSION}"
+#PREFERRED_VERSION_cargo-native ?= "${RUST_VERSION}"
+
+# temporary for tune-test
+# DISTRO_FEATURES_remove = "ld-is-gold"
+
+DISTRO_FEATURES_append = " virtualization"
+# DISTRO_FEATURES_append = " usrmerge"
+
+PACKAGECONFIG_remove_pn-linuxconsole = "sdl"
+
+BB_SERVER_TIMEOUT = "60"
+
+#I_SWEAR_TO_MIGRATE_TO_PYTHON3 = "yes"
+
+# PACKAGECONFIG_class-native_pn-python3-native = ""
+
+# TARGET_VENDOR = "-foo4"
+
+#CLANG_EXTRA_OE_VENDORS = "foo"
