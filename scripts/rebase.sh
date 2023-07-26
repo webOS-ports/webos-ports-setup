@@ -2,7 +2,7 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="scarthgap"
+RELEASE="styhead"
 BUILD="luneos"
 
 BUILD_BRANCH="jansa/${RELEASE}"
