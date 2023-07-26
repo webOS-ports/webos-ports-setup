@@ -1,0 +1,110 @@
+CONF_VERSION = "1"
+
+PARALLEL_MAKE="-j 64"
+BB_NUMBER_THREADS = "8"
+BB_NUMBER_PARSE_THREADS = "64"
+
+BB_SERVER_TIMEOUT = "60"
+
+BB_GENERATE_MIRROR_TARBALLS = "1"
+
+BB_DISKMON_DIRS = "\
+    STOPTASKS,${TMPDIR},1G,100K \
+    STOPTASKS,${DL_DIR},1G,100K \
+    STOPTASKS,${SSTATE_DIR},1G,100K \
+    STOPTASKS,/tmp,100M,100K \
+    ABORT,${TMPDIR},100M,1K \
+    ABORT,${DL_DIR},100M,1K \
+    ABORT,${SSTATE_DIR},100M,1K \
+    ABORT,/tmp,10M,1K"
+
+require conf/distro/include/yocto-uninative.inc
+INHERIT += "uninative"
+
+#require conf/distro/include/no-static-libs.inc
+require conf/distro/include/security_flags.inc
+
+PATCHRESOLVE = "noop"
+
+#INHERIT += "rm_work"
+
+TERMCMD = "${SCREEN_TERMCMD}"
+TERMCMDRUN = "${SCREEN_TERMCMDRUN}"
+
+DISTRO_FEED_PREFIX = "jama"
+DISTRO_FEED_URI = "http://jama.dyndns-home.com/org.openembedded.shr-core/"
+
+INHERIT += "buildhistory"
+BUILDHISTORY_COMMIT ?= "1"
+BUILDHISTORY_COMMIT_AUTHOR ?= "Martin Jansa <Martin.Jansa@gmail.com>"
+
+PREFERRED_ARM_INSTRUCTION_SET              ?= "thumb"
+ARM_INSTRUCTION_SET = "${PREFERRED_ARM_INSTRUCTION_SET}"
+
+#DISTRO_FEATURES_remove = "x11"
+#DISTRO_FEATURES_append = " wayland"
+#PREFERRED_PROVIDER_virtual/libgl = "mesa-gl"
+#PREFERRED_PROVIDER_virtual/mesa = "mesa-gl"
+
+LICENSE_FLAGS_WHITELIST = "commercial"
+
+#DISTRO_FEATURES_append = " opengl"
+#DISTRO_FEATURES_append = " opengl wayland"
+DISTRO_FEATURES_append = " ld-is-gold"
+DISTRO_FEATURES_append = " virtualization"
+EXTRA_IMAGE_FEATURES = "debug-tweaks"
+
+INIT_MANAGER = "systemd"
+DISTRO_FEATURES_remove = "seccomp"
+
+# enable reporting
+# needs http://patchwork.openembedded.org/patch/68735/
+ERR_REPORT_SERVER = "errors.yoctoproject.org"
+ERR_REPORT_PORT = "80"
+ERR_REPORT_USERNAME = "Martin Jansa"
+ERR_REPORT_EMAIL = "Martin.Jansa@gmail.com"
+ERR_REPORT_UPLOAD_FAILURES = "1"
+INHERIT += "report-error"
+
+INHERIT += "buildstats buildstats-summary"
+
+UVESA_MODE = "1600x1200-32"
+
+ENABLE_UART = "1"
+RPI_USE_U_BOOT = "1"
+
+DEFAULT_WARN_QA ?= "\
+    ldflags useless-rpaths rpaths staticdev libdir xorg-driver-abi \
+    textrel already-stripped incompatible-license files-invalid \
+    installed-vs-shipped compile-host-path install-host-path \
+    pn-overrides infodir build-deps \
+    unknown-configure-option symlink-to-sysroot multilib \
+    invalid-packageconfig host-user-contaminated uppercase-pn patch-fuzz \
+"
+
+ERROR_QA_append = " ${DEFAULT_WARN_QA}"
+WARN_QA_remove = "${DEFAULT_WARN_QA}"
+
+#TCLIBC_qemux86-64 = "musl"
+#DISTRO_FEATURES_remove = "gobject-introspection-data"
+
+#PREFERRED_VERSION_elfutils = "0.148"
+
+# to have something with fontconfig.bbclass inherit in the image
+IMAGE_INSTALL_append_pn-core-image-weston = " liberation-fonts"
+# needed by weston now
+DISTRO_FEATURES_append = " pam"
+
+# I_SWEAR_TO_MIGRATE_TO_PYTHON3 = "yes"
+
+DISTRO_FEATURES_append = " usrmerge"
+
+#USER_CLASSES_append = " image-prelink"
+#IMAGE_INSTALL_append_pn-core-image-minimal = "dbus"
+
+#PREFERRED_PROVIDER_virtual/kernel = "linux-raspberrypi-dev"
+
+#SRCREV_pn-pseudo-native = "parsing-test"
+
+DISTRO_FEATURES_append = " opengl wayland"
+BBMASK += 'openembedded-core/meta/conf/machine/qemux86-64.conf'
