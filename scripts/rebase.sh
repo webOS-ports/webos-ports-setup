@@ -20,6 +20,7 @@ BASE_LAYERS=" \
   meta-virtualization \
   meta-security \
   meta-smartphone \
+  meta-webos-ports \
   bitbake \
 "
 
