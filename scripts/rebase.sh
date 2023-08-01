@@ -13,6 +13,7 @@ BASE_LAYERS=" \
   meta-openembedded \
   meta-pine64-luneos \
   meta-qt6 \
+  meta-clang \
   meta-raspberrypi \
   meta-rockchip \
   meta-rpi-luneos \
