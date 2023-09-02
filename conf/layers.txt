@@ -1,12 +1,12 @@
-bitbake,https://github.com/openembedded/bitbake.git,master,703792c48c818025163de9c2f35f6ac815500607
-openembedded-core,https://github.com/openembedded/openembedded-core.git,master,d0bd1c823c10af9a0ef7e5ce05b770c1d8bb247c
-meta-openembedded,https://github.com/openembedded/meta-openembedded.git,master,ee1026ab77dcb31b0f5cb723b4d998aab4c00382
+bitbake,https://github.com/openembedded/bitbake.git,master,0fc821a22f2b49cbd336d9658d92942c0d733be1
+openembedded-core,https://github.com/openembedded/openembedded-core.git,master,79d453eb0caf304454146c9c59744150b678e64d
+meta-openembedded,https://github.com/openembedded/meta-openembedded.git,master,05e32934d064daa186742084586b3111036a8e1b
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.5.2,74d7d77e23b144cbb801cf6af7ec78b9673158f4
-meta-clang,https://github.com/kraj/meta-clang.git,master,1addd3db69cee59418e55cdeecaf7cd0a09777d8
+meta-clang,https://github.com/kraj/meta-clang.git,master,7a9fe6f0c67c85a51cf28fe6eb76ef9977397f7b
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,master,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,master,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,master,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,master,3b5fb1ff71f4ef06170191dc10e16e0a3b86cf78
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,master,6501ec892cc75a8759dea81a99ebd893d998ec83
-meta-arm,https://git.yoctoproject.org/meta-arm.git,master,730806956a783f3562fb1742993355613fab3b80
+meta-arm,https://git.yoctoproject.org/meta-arm.git,master,85b11ed55bb0fc2a9080d513ab03df451a4a750f
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,af8b9210151d1ccf8e00304f4e728a24fe9a4958
