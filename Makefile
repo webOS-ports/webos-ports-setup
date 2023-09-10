@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = nanbield
+BRANCH_COMMON = scarthgap
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
