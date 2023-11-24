@@ -6,6 +6,6 @@ meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,mickledo
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,mickledore,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,mickledore,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,mickledore,3b5fb1ff71f4ef06170191dc10e16e0a3b86cf78
-meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,mickledore,cfd3eb4ec5f9640658574374da4a72cb66506113
+meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,mickledore,9c81413d0b6f41f14f0f9c504d19e312c5b9958f
 meta-arm,https://git.yoctoproject.org/meta-arm.git,mickledore,9bcc166bd5bb717aa86bb0464621a36abc51fa19
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,mickledore,5f06c7c018755b0bef6d6f4944ae25b5447535fc
