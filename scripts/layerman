@@ -18,7 +18,8 @@ function check_layer() {
 		git clone ${LAYERURI} ${LAYERDIR}
 		cd ${LAYERDIR}
 
-		if [ "${BRANCH}" != "master" ] ; then
+		CURRENTBRANCH="$(git branch | grep '*' | awk '{print $2}')"
+		if [ "${BRANCH}" != "${CURRENTBRANCH}" ] ; then
 			git checkout origin/${BRANCH} -b ${BRANCH}
 		fi
 
