@@ -11,6 +11,12 @@ LG/Google Nexus 4 (Mako): http://webos-ports.org/wiki/Build_for_Mako
 
 LG/Google Nexus 5 (Hammerhead): http://webos-ports.org/wiki/Build_for_Hammerhead
 
+Pine64 PinePhone: http://webos-ports.org/wiki/Build_for_PinePhone
+
+Pine64 PinePhonePro: http://webos-ports.org/wiki/Build_for_PinePhonePro
+
+Pine64 PineTab2: http://webos-ports.org/wiki/Build_for_PineTab2
+
 VirtualBox 32 bits (qemux86): http://webos-ports.org/wiki/Build_for_qemux86
 
 VirtualBox 64 bits (qemux86-64): http://webos-ports.org/wiki/Build_for_qemux86-64
