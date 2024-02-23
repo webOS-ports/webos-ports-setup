@@ -6,7 +6,7 @@ meta-clang,https://github.com/kraj/meta-clang.git,master,f66ca28ec1b01e67e7ba176
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,scarthgap,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,scarthgap,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,scarthgap,HEAD
-meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,scarthgap,1f97c19a51f841d43964c95992a97feaa5c46cce
+meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,scarthgap,HEAD
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,master,b65bff6323585d2a3325678f92262ddf54ad7eeb
 meta-arm,https://git.yoctoproject.org/meta-arm.git,master,1560fbe0c9ed43cae0318cc8935d3d82d6ffd94f
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,ebfc42663d52f2247b7de5d6267b353887cc2d91
