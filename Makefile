@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = scarthgap
+BRANCH_COMMON = styhead
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
