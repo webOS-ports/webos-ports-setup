@@ -9,4 +9,4 @@ meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,master,
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,master,HEAD
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,master,eb8ffc4e63e5e2f729d90d0cd95b8cffed12ece1
 meta-arm,https://git.yoctoproject.org/meta-arm.git,master,981425c54e36e3414ab1abadd2c7b1f684f2c1ff
-meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,ce1ce3465a532d478e452637954f75f7fa35c657
+meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,b2470c03340c23ddf779799d125a11f12eac38c9
