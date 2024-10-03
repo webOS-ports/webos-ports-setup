@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = styhead
+BRANCH_COMMON = walnascar
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
