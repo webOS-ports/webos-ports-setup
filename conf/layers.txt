@@ -1,6 +1,6 @@
 bitbake,https://github.com/openembedded/bitbake.git,2.8,d251668d9a7a8dd25bd8767efb30d6d9ff8b1ad3
 openembedded-core,https://github.com/openembedded/openembedded-core.git,scarthgap,3d894863f442188bad446095bd7fdd82665bb54b
-meta-openembedded,https://github.com/openembedded/meta-openembedded.git,scarthgap,735ae0310870ffce07ce0c55c4f87c20ac161ff9
+meta-openembedded,https://github.com/openembedded/meta-openembedded.git,scarthgap,72018ca1b1a471226917e8246e8bbf9a374ccf97
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.7.2,d4ad3746864a815b9c42bed7f0f81e0471ca975f
 meta-clang,https://github.com/kraj/meta-clang.git,scarthgap,2b7433611d80f6d0ee1b04156fa91fc73d3c2665
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,scarthgap,HEAD
