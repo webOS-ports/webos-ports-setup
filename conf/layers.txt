@@ -8,5 +8,5 @@ meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,scarthgap,H
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,scarthgap,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,scarthgap,HEAD
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,scarthgap,6df7e028a2b7b2d8cab0745dc0ed2eebc3742a17
-meta-arm,https://git.yoctoproject.org/meta-arm.git,scarthgap,d67a9b6070beedbebe597f6334c651606196e183
+meta-arm,https://git.yoctoproject.org/meta-arm.git,scarthgap,7088279c0ab00c7dabefdd4544951b4746b48476
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,scarthgap,e641dba980efa885df7e992ac5c8783270aa375d
