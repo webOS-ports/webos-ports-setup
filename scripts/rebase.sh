@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="master"
+RELEASE="styhead"
 BUILD="nodistro"
 
-BUILD_BRANCH="jansa/nodistro-styhead"
+BUILD_BRANCH="jansa/nodistro-${RELEASE}"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-openembedded \
@@ -15,7 +15,6 @@ BASE_LAYERS=" \
   meta-raspberrypi \
   openembedded-core \
   meta-browser \
-  meta-python2 \
   meta-clang \
   meta-virtualization \
   meta-security \
