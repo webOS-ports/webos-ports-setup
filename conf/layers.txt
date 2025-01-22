@@ -2,7 +2,7 @@ bitbake,https://github.com/openembedded/bitbake.git,2.8,f40a3a477d5241b697bf2fb0
 openembedded-core,https://github.com/openembedded/openembedded-core.git,scarthgap,92eea72a25e553c698bee9e3f551a5880bd4631c
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,scarthgap,5f9f741193f55bb4bb3c974e913d169dd23e40d3
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.8.1,f4ef1331f0cc49bd4aa1e1aace6dc7f000b9651e
-meta-clang,https://github.com/kraj/meta-clang.git,scarthgap,f002eb5ab051443e7b5fbc32a9505d63a67db7b6
+meta-clang,https://github.com/kraj/meta-clang.git,scarthgap,8c77b427408db01b8de4c04bd3d247c13c154f92
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,scarthgap,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,scarthgap,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,scarthgap,HEAD
