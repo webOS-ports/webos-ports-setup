@@ -1,4 +1,4 @@
-bitbake,https://github.com/openembedded/bitbake.git,2.10,1452e74cc4ddfaadc6537a049877a66cec253c8d
+bitbake,https://github.com/openembedded/bitbake.git,2.10,f4b2ae97a8dd745b463e5e10fbc8d30d29d223c5
 openembedded-core,https://github.com/openembedded/openembedded-core.git,styhead,62dfe689246d648f9970a5476716e486b1a33765
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,styhead,74b08dcbb1d0f4600527602804544c9d63697ebc
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.8.1,f4ef1331f0cc49bd4aa1e1aace6dc7f000b9651e
