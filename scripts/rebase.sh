@@ -20,6 +20,7 @@ BASE_LAYERS=" \
   meta-security \
   meta-smartphone \
   meta-webos-ports \
+  meta-tensorflow \
   bitbake \
 "
 
