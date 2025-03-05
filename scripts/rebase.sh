@@ -21,6 +21,7 @@ BASE_LAYERS=" \
   meta-smartphone \
   meta-webos-ports \
   meta-tensorflow \
+  meta-selinux \
   bitbake \
 "
 
