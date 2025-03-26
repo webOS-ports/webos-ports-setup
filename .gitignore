@@ -3,7 +3,7 @@ meta-*
 openembedded-core
 
 sstate-cache
-tmp-glibc
+tmp
 buildhistory
 cache
 
