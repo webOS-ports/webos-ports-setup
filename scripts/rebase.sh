@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="walnascar"
+RELEASE="master"
 BUILD="nodistro"
 
-BUILD_BRANCH="jansa/nodistro-${RELEASE}"
+BUILD_BRANCH="jansa/nodistro-whinlatter"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-openembedded \
