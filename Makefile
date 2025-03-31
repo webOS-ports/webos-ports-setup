@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = walnascar
+BRANCH_COMMON = whinlatter
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
