@@ -19,6 +19,7 @@ BASE_LAYERS=" \
   meta-clang \
   meta-virtualization \
   meta-security \
+  meta-webos-ports \
   meta-smartphone \
   bitbake \
 "
