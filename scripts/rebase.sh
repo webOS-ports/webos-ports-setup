@@ -2,7 +2,7 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="master"
+RELEASE="scarthgap"
 BUILD="nodistro"
 
 BUILD_BRANCH="jansa/nodistro-scarthgap"
