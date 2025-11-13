@@ -22,6 +22,7 @@ BASE_LAYERS=" \
   meta-webos-ports \
   meta-tensorflow \
   meta-selinux \
+  meta-yocto \
   bitbake \
 "
 
