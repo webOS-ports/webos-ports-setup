@@ -1,12 +1,12 @@
 bitbake,https://github.com/openembedded/bitbake.git,2.12,ac097300921590ed6a814f2c3fa08a59f4ded92d
 openembedded-core,https://github.com/openembedded/openembedded-core.git,walnascar,ff1c54df4e7b15df2e2c9fced59d9ad3e92ed565
-meta-openembedded,https://github.com/openembedded/meta-openembedded.git,walnascar,80ab58cc404959ae2f0e8b2e68935b3bfd8e8cfe
+meta-openembedded,https://github.com/openembedded/meta-openembedded.git,walnascar,07330a98cf93806b7a4e0170a541b94962ff3960
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.8.1,f4ef1331f0cc49bd4aa1e1aace6dc7f000b9651e
-meta-clang,https://github.com/kraj/meta-clang.git,walnascar,003cba92e982bdd565a6889f28799f8bba14957e
+meta-clang,https://github.com/kraj/meta-clang.git,walnascar,2b3ee2500c89fe402741978421fb41e0d25c57e3
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,walnascar,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,walnascar,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,walnascar,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,walnascar,HEAD
-meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,walnascar,5c540d5447fba8b652c8778af30e605242df650c
-meta-arm,https://git.yoctoproject.org/meta-arm.git,walnascar,21894cc2ea3197e6bfc1a56d889f757a09dc8b31
+meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,walnascar,0f68e8754514d64f2fe5480195b8992f341d54af
+meta-arm,https://git.yoctoproject.org/meta-arm.git,walnascar,b68089f2648d712b9406d0e88c71758913267f81
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,walnascar,d5b97e3d82a866272f7235b7c3904bc1b85eb4c0
