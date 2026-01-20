@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="master"
+RELEASE="whinlatter"
 BUILD="luneos"
 
-BUILD_BRANCH="jansa/whinlatter"
+BUILD_BRANCH="jansa/${RELEASE}"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-webos-ports \
