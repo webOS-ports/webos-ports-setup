@@ -22,7 +22,28 @@ test ! -d "${TOPDIR}/openembedded-core/scripts" || export PATH="${TOPDIR}/openem
 # used in bitbake wrapper for pseudodone location
 export BUILDDIR="${TOPDIR}"
 
-export BB_ENV_PASSTHROUGH_ADDITIONS="MACHINE DISTRO http_proxy ftp_proxy https_proxy all_proxy ALL_PROXY no_proxy SSH_AGENT_PID SSH_AUTH_SOCK BB_SRCREV_POLICY SDKMACHINE BB_NUMBER_THREADS GIT_PROXY_COMMAND PSEUDO_DISABLED PSEUDO_BUILD WEBOS_DISTRO_BUILD_ID"
+export BB_ENV_PASSTHROUGH_ADDITIONS="\
+ ALL_PROXY \
+ all_proxy \
+ ftp_proxy \
+ GIT_PROXY_COMMAND \
+ http_proxy \
+ https_proxy \
+ no_proxy \
+ BB_NUMBER_THREADS \
+ BB_SRCREV_POLICY \
+ DISTRO \
+ DL_DIR \
+ MACHINE \
+ PARALLEL_MAKE \
+ PSEUDO_BUILD \
+ PSEUDO_DISABLED \
+ SDKMACHINE \
+ SSH_AGENT_PID \
+ SSH_AUTH_SOCK \
+ SSTATE_DIR \
+ WEBOS_DISTRO_BUILD_ID \
+"
 export LD_LIBRARY_PATH=
 export LANG=C
 export MACHINE
