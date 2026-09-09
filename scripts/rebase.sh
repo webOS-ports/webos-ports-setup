@@ -2,10 +2,10 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="master"
+RELEASE="wrynose"
 BUILD="nodistro"
 
-BUILD_BRANCH="jansa/nodistro-wrynose"
+BUILD_BRANCH="jansa/nodistro-${RELEASE}"
 BRANCH="jansa/${RELEASE}"
 BASE_LAYERS=" \
   meta-openembedded \
