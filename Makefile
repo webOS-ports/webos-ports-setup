@@ -3,7 +3,7 @@
 
 MAKEFLAGS = -swr
 
-BRANCH_COMMON = blacksail
+BRANCH_COMMON = garburn
 
 URL_COMMON = "https://github.com/webOS-ports/webos-ports-setup.git"
 
