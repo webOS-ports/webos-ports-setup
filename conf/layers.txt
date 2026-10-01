@@ -4,6 +4,7 @@ meta-openembedded,https://github.com/openembedded/meta-openembedded.git,wrynose,
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.12,7d6c5a2b190881960aefb1e2299322b31aa04c5c
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,wrynose,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,wrynose,HEAD
+meta-mecha-luneos,https://github.com/webOS-ports/meta-mecha-luneos.git,wrynose,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,wrynose,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,wrynose,HEAD
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,wrynose,f62c67921474370829d24a4fa01ef88543f3906b
