@@ -2,11 +2,11 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="blacksail"
+RELEASE="garburn"
 BUILD="luneos"
 
 BUILD_BRANCH="jansa/${RELEASE}"
-BRANCH="jansa/${RELEASE}"
+BRANCH="jansa/master"
 BASE_LAYERS=" \
   meta-webos-ports \
   meta-smartphone \
