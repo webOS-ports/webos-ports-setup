@@ -2,11 +2,11 @@
 
 SCRIPTDIR=/OE/layers/scripts
 
-RELEASE="master"
+RELEASE="garburn"
 BUILD="nodistro"
 
-BUILD_BRANCH="jansa/nodistro-blacksail"
-BRANCH="jansa/${RELEASE}"
+BUILD_BRANCH="jansa/nodistro-${RELEASE}"
+BRANCH="jansa/master"
 BASE_LAYERS=" \
   meta-openembedded \
   meta-qt5 \
