@@ -10,3 +10,4 @@ meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,wrynose,HEAD
 meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,wrynose,919588393f41b48cb6c5d832aa35e58a19b6762d
 meta-arm,https://git.yoctoproject.org/meta-arm.git,wrynose,673e8d7c5dcd14de58092eb73e6ecc5eee5c1735
 meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,wrynose,9d02575bfd9ca5e87c394f593f2bbdbdee914d4e
+meta-pgo,https://github.com/markyang92/meta-pgo.git,wrynose,b15a4e4d9031a925f6fe252dfaee47cb903b265e
