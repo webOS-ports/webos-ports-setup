@@ -11,9 +11,7 @@ BASE_LAYERS=" \
   meta-webos-ports \
   meta-smartphone \
   meta-openembedded \
-  meta-mecha-luneos \
   meta-pine64-luneos \
-  meta-pgo \
   meta-qt6 \
   meta-raspberrypi \
   meta-rockchip \
