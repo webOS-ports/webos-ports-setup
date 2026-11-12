@@ -1,7 +1,7 @@
-bitbake,https://github.com/openembedded/bitbake.git,2.20,634f8dede6b9d71b5a6691499fd05a8678b46eae
-openembedded-core,https://github.com/openembedded/openembedded-core.git,blacksail,d3494922ad3e10a8880fa349366eb22e1f9f24ca
+bitbake,https://github.com/openembedded/bitbake.git,2.20,7f7ae8cd58993a389adbd130b07ea5de8415d2f9
+openembedded-core,https://github.com/openembedded/openembedded-core.git,blacksail,bab7fd1ab42efeb617ea9d72ffe7b1839f29179c
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,blacksail,bb956bf8ff7a32f31deaa83e96880d10ab564d14
-meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.12,3d9da06dce7e00c5a419e870234a86bddf991bab
+meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.12,10b449ae721b761a5e83b7134e1946f5d995a94f
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,blacksail,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,blacksail,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,blacksail,HEAD
