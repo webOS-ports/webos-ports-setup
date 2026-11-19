@@ -1,11 +1,11 @@
 bitbake,https://github.com/openembedded/bitbake.git,2.20,7f7ae8cd58993a389adbd130b07ea5de8415d2f9
 openembedded-core,https://github.com/openembedded/openembedded-core.git,blacksail,5b458838c126051c884c8cb5225c7265d1483ea6
 meta-openembedded,https://github.com/openembedded/meta-openembedded.git,blacksail,bb956bf8ff7a32f31deaa83e96880d10ab564d14
-meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.12,5fcf0548f31b26d927652e01bc92779a0d4ea62d
+meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.12,ec2a3850973117f7d96e1d9b9e6a13fcb0afcd59
 meta-smartphone,https://github.com/shr-distribution/meta-smartphone.git,blacksail,HEAD
 meta-webos-ports,https://github.com/webOS-ports/meta-webos-ports.git,blacksail,HEAD
 meta-pine64-luneos,https://github.com/webOS-ports/meta-pine64-luneos.git,blacksail,HEAD
 meta-rpi-luneos,https://github.com/webOS-ports/meta-rpi-luneos.git,blacksail,HEAD
-meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,master,55fbde73215350071c95b42130a14663619b6a50
+meta-raspberrypi,https://github.com/agherzan/meta-raspberrypi.git,master,18d9e0a3464d0982a88f489547809969573bf36f
 meta-arm,https://git.yoctoproject.org/meta-arm.git,blacksail,5f432e5ac06f7679a58ae4da5df40e62d8ea3b35
-meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,cc7807f781bdd9e886cfed741040c56f690063f5
+meta-rockchip,https://git.yoctoproject.org/meta-rockchip.git,master,67cbab6ca11b25cd60ef44846bf61c24e7ea588f
